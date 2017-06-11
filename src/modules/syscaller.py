@@ -10,7 +10,7 @@ syscalls_32_db = 'syscalls_32.json'
 
 # Simple database loader - assume all is in one file for now
 def load_database(data_path):
-  fh = open(sys.path[0]+'/syscaller/data/' + data_path, 'r')
+  fh = open(os.path.dirname(__file__)+'/../data/' + data_path, 'r')
   return json.load(fh)
 
 # Function to be executed when we invoke plugin
