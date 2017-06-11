@@ -1,0 +1,4482 @@
+{
+  "1": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "error_code"
+      }
+    ], 
+    "name": "sys_exit"
+  }, 
+  "2": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_fork"
+  }, 
+  "3": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_read"
+  }, 
+  "4": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_write"
+  }, 
+  "5": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_open"
+  }, 
+  "6": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }
+    ], 
+    "name": "sys_close"
+  }, 
+  "7": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "stat_addr"
+      }, 
+      {
+        "type": "value", 
+        "name": "options"
+      }
+    ], 
+    "name": "sys_waitpid"
+  }, 
+  "8": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "pathname"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_creat"
+  }, 
+  "9": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "oldname"
+      }, 
+      {
+        "type": "string", 
+        "name": "newname"
+      }
+    ], 
+    "name": "sys_link"
+  }, 
+  "10": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "pathname"
+      }
+    ], 
+    "name": "sys_unlink"
+  }, 
+  "11": {
+    "args": [
+      {
+        "type": "string", 
+        "name": ""
+      }, 
+      {
+        "type": "string", 
+        "name": ""
+      }, 
+      {
+        "type": "string", 
+        "name": ""
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_execve"
+  }, 
+  "12": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }
+    ], 
+    "name": "sys_chdir"
+  }, 
+  "13": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "tloc"
+      }
+    ], 
+    "name": "sys_time"
+  }, 
+  "14": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }, 
+      {
+        "type": "value", 
+        "name": "dev"
+      }
+    ], 
+    "name": "sys_mknod"
+  }, 
+  "15": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_chmod"
+  }, 
+  "16": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }
+    ], 
+    "name": "sys_lchown16"
+  }, 
+  "18": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_stat"
+  }, 
+  "19": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "origin"
+      }
+    ], 
+    "name": "sys_lseek"
+  }, 
+  "20": {
+    "args": [], 
+    "name": "sys_getpid"
+  }, 
+  "21": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "dev_name"
+      }, 
+      {
+        "type": "string", 
+        "name": "dir_name"
+      }, 
+      {
+        "type": "string", 
+        "name": "type"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "data"
+      }
+    ], 
+    "name": "sys_mount"
+  }, 
+  "22": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_oldumount"
+  }, 
+  "23": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "uid"
+      }
+    ], 
+    "name": "sys_setuid16"
+  }, 
+  "24": {
+    "args": [], 
+    "name": "sys_getuid16"
+  }, 
+  "25": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "tptr"
+      }
+    ], 
+    "name": "sys_stime"
+  }, 
+  "26": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "request"
+      }, 
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "addr"
+      }, 
+      {
+        "type": "value", 
+        "name": "data"
+      }
+    ], 
+    "name": "sys_ptrace"
+  }, 
+  "27": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "seconds"
+      }
+    ], 
+    "name": "sys_alarm"
+  }, 
+  "28": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_fstat"
+  }, 
+  "29": {
+    "args": [], 
+    "name": "sys_pause"
+  }, 
+  "30": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "times"
+      }
+    ], 
+    "name": "sys_utime"
+  }, 
+  "33": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_access"
+  }, 
+  "34": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "increment"
+      }
+    ], 
+    "name": "sys_nice"
+  }, 
+  "36": {
+    "args": [], 
+    "name": "sys_sync"
+  }, 
+  "37": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sig"
+      }
+    ], 
+    "name": "sys_kill"
+  }, 
+  "38": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "oldname"
+      }, 
+      {
+        "type": "string", 
+        "name": "newname"
+      }
+    ], 
+    "name": "sys_rename"
+  }, 
+  "39": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "pathname"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_mkdir"
+  }, 
+  "40": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "pathname"
+      }
+    ], 
+    "name": "sys_rmdir"
+  }, 
+  "41": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fildes"
+      }
+    ], 
+    "name": "sys_dup"
+  }, 
+  "42": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "fildes"
+      }
+    ], 
+    "name": "sys_pipe"
+  }, 
+  "43": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "tbuf"
+      }
+    ], 
+    "name": "sys_times"
+  }, 
+  "45": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "brk"
+      }
+    ], 
+    "name": "sys_brk"
+  }, 
+  "46": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gid"
+      }
+    ], 
+    "name": "sys_setgid16"
+  }, 
+  "47": {
+    "args": [], 
+    "name": "sys_getgid16"
+  }, 
+  "48": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "sig"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "handler"
+      }
+    ], 
+    "name": "sys_signal"
+  }, 
+  "49": {
+    "args": [], 
+    "name": "sys_geteuid16"
+  }, 
+  "50": {
+    "args": [], 
+    "name": "sys_getegid16"
+  }, 
+  "51": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_acct"
+  }, 
+  "52": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_umount"
+  }, 
+  "54": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg"
+      }
+    ], 
+    "name": "sys_ioctl"
+  }, 
+  "55": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg"
+      }
+    ], 
+    "name": "sys_fcntl"
+  }, 
+  "57": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "pgid"
+      }
+    ], 
+    "name": "sys_setpgid"
+  }, 
+  "59": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_olduname"
+  }, 
+  "60": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "mask"
+      }
+    ], 
+    "name": "sys_umask"
+  }, 
+  "61": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }
+    ], 
+    "name": "sys_chroot"
+  }, 
+  "62": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dev"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "ubuf"
+      }
+    ], 
+    "name": "sys_ustat"
+  }, 
+  "63": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "oldfd"
+      }, 
+      {
+        "type": "value", 
+        "name": "newfd"
+      }
+    ], 
+    "name": "sys_dup2"
+  }, 
+  "64": {
+    "args": [], 
+    "name": "sys_getppid"
+  }, 
+  "65": {
+    "args": [], 
+    "name": "sys_getpgrp"
+  }, 
+  "66": {
+    "args": [], 
+    "name": "sys_setsid"
+  }, 
+  "67": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "sig"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "act"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "oact"
+      }
+    ], 
+    "name": "sys_sigaction"
+  }, 
+  "68": {
+    "args": [], 
+    "name": "sys_sgetmask"
+  }, 
+  "69": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "newmask"
+      }
+    ], 
+    "name": "sys_ssetmask"
+  }, 
+  "70": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ruid"
+      }, 
+      {
+        "type": "value", 
+        "name": "euid"
+      }
+    ], 
+    "name": "sys_setreuid16"
+  }, 
+  "71": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "rgid"
+      }, 
+      {
+        "type": "value", 
+        "name": "egid"
+      }
+    ], 
+    "name": "sys_setregid16"
+  }, 
+  "72": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "history0"
+      }, 
+      {
+        "type": "value", 
+        "name": "history1"
+      }, 
+      {
+        "type": "value", 
+        "name": "mask"
+      }
+    ], 
+    "name": "sys_sigsuspend"
+  }, 
+  "73": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "set"
+      }
+    ], 
+    "name": "sys_sigpending"
+  }, 
+  "74": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_sethostname"
+  }, 
+  "75": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "resource"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "rlim"
+      }
+    ], 
+    "name": "sys_setrlimit"
+  }, 
+  "76": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "resource"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "rlim"
+      }
+    ], 
+    "name": "sys_old_getrlimit"
+  }, 
+  "77": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "who"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "ru"
+      }
+    ], 
+    "name": "sys_getrusage"
+  }, 
+  "78": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "tv"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tz"
+      }
+    ], 
+    "name": "sys_gettimeofday"
+  }, 
+  "79": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "tv"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tz"
+      }
+    ], 
+    "name": "sys_settimeofday"
+  }, 
+  "80": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gidsetsize"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "grouplist"
+      }
+    ], 
+    "name": "sys_getgroups16"
+  }, 
+  "81": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gidsetsize"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "grouplist"
+      }
+    ], 
+    "name": "sys_setgroups16"
+  }, 
+  "82": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "arg"
+      }
+    ], 
+    "name": "sys_old_select"
+  }, 
+  "83": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "old"
+      }, 
+      {
+        "type": "string", 
+        "name": "new"
+      }
+    ], 
+    "name": "sys_symlink"
+  }, 
+  "84": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_lstat"
+  }, 
+  "85": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "bufsiz"
+      }
+    ], 
+    "name": "sys_readlink"
+  }, 
+  "86": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "library"
+      }
+    ], 
+    "name": "sys_uselib"
+  }, 
+  "87": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "specialfile"
+      }, 
+      {
+        "type": "value", 
+        "name": "swap_flags"
+      }
+    ], 
+    "name": "sys_swapon"
+  }, 
+  "88": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "magic1"
+      }, 
+      {
+        "type": "value", 
+        "name": "magic2"
+      }, 
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "arg"
+      }
+    ], 
+    "name": "sys_reboot"
+  }, 
+  "89": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "int"
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }, 
+      {
+        "type": "value", 
+        "name": "int"
+      }
+    ], 
+    "name": "sys_old_readdir"
+  }, 
+  "90": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "arg"
+      }
+    ], 
+    "name": "sys_old_mmap"
+  }, 
+  "91": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "addr"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_munmap"
+  }, 
+  "92": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "value", 
+        "name": "length"
+      }
+    ], 
+    "name": "sys_truncate"
+  }, 
+  "93": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "length"
+      }
+    ], 
+    "name": "sys_ftruncate"
+  }, 
+  "94": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_fchmod"
+  }, 
+  "95": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }
+    ], 
+    "name": "sys_fchown16"
+  }, 
+  "96": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "value", 
+        "name": "who"
+      }
+    ], 
+    "name": "sys_getpriority"
+  }, 
+  "97": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "value", 
+        "name": "who"
+      }, 
+      {
+        "type": "value", 
+        "name": "niceval"
+      }
+    ], 
+    "name": "sys_setpriority"
+  }, 
+  "99": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "buf"
+      }
+    ], 
+    "name": "sys_statfs"
+  }, 
+  "100": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "buf"
+      }
+    ], 
+    "name": "sys_fstatfs"
+  }, 
+  "101": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "value", 
+        "name": "long"
+      }
+    ], 
+    "name": "sys_ioperm"
+  }, 
+  "102": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "call"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "args"
+      }
+    ], 
+    "name": "sys_socketcall"
+  }, 
+  "103": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "type"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_syslog"
+  }, 
+  "104": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "ovalue"
+      }
+    ], 
+    "name": "sys_setitimer"
+  }, 
+  "105": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }
+    ], 
+    "name": "sys_getitimer"
+  }, 
+  "106": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_newstat"
+  }, 
+  "107": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_newlstat"
+  }, 
+  "108": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_newfstat"
+  }, 
+  "109": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_uname"
+  }, 
+  "110": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "int"
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_iopl"
+  }, 
+  "111": {
+    "args": [], 
+    "name": "sys_vhangup"
+  }, 
+  "113": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_vm86old"
+  }, 
+  "114": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "stat_addr"
+      }, 
+      {
+        "type": "value", 
+        "name": "options"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "ru"
+      }
+    ], 
+    "name": "sys_wait4"
+  }, 
+  "115": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "specialfile"
+      }
+    ], 
+    "name": "sys_swapoff"
+  }, 
+  "116": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "info"
+      }
+    ], 
+    "name": "sys_sysinfo"
+  }, 
+  "117": {
+    "args": [], 
+    "name": "sys_ipc"
+  }, 
+  "118": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }
+    ], 
+    "name": "sys_fsync"
+  }, 
+  "119": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "regs"
+      }
+    ], 
+    "name": "sys_sigreturn"
+  }, 
+  "120": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_clone"
+  }, 
+  "121": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_setdomainname"
+  }, 
+  "122": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_newuname"
+  }, 
+  "123": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }, 
+      {
+        "type": "value", 
+        "name": "long"
+      }
+    ], 
+    "name": "sys_modify_ldt"
+  }, 
+  "124": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "txc_p"
+      }
+    ], 
+    "name": "sys_adjtimex"
+  }, 
+  "125": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "value", 
+        "name": "prot"
+      }
+    ], 
+    "name": "sys_mprotect"
+  }, 
+  "126": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "how"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "set"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "oset"
+      }
+    ], 
+    "name": "sys_sigprocmask"
+  }, 
+  "128": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "umod"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "string", 
+        "name": "uargs"
+      }
+    ], 
+    "name": "sys_init_module"
+  }, 
+  "129": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name_user"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_delete_module"
+  }, 
+  "131": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "string", 
+        "name": "special"
+      }, 
+      {
+        "type": "value", 
+        "name": "id"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "addr"
+      }
+    ], 
+    "name": "sys_quotactl"
+  }, 
+  "132": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }
+    ], 
+    "name": "sys_getpgid"
+  }, 
+  "133": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }
+    ], 
+    "name": "sys_fchdir"
+  }, 
+  "134": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "func"
+      }, 
+      {
+        "type": "value", 
+        "name": "data"
+      }
+    ], 
+    "name": "sys_bdflush"
+  }, 
+  "135": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "option"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg1"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg2"
+      }
+    ], 
+    "name": "sys_sysfs"
+  }, 
+  "136": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "personality"
+      }
+    ], 
+    "name": "sys_personality"
+  }, 
+  "138": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "uid"
+      }
+    ], 
+    "name": "sys_setfsuid16"
+  }, 
+  "139": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gid"
+      }
+    ], 
+    "name": "sys_setfsgid16"
+  }, 
+  "140": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset_high"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset_low"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "result"
+      }, 
+      {
+        "type": "value", 
+        "name": "origin"
+      }
+    ], 
+    "name": "sys_llseek"
+  }, 
+  "141": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "dirent"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_getdents"
+  }, 
+  "142": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "n"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "inp"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "outp"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "exp"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tvp"
+      }
+    ], 
+    "name": "sys_select"
+  }, 
+  "143": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "cmd"
+      }
+    ], 
+    "name": "sys_flock"
+  }, 
+  "144": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_msync"
+  }, 
+  "145": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "vec"
+      }, 
+      {
+        "type": "value", 
+        "name": "vlen"
+      }
+    ], 
+    "name": "sys_readv"
+  }, 
+  "146": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "vec"
+      }, 
+      {
+        "type": "value", 
+        "name": "vlen"
+      }
+    ], 
+    "name": "sys_writev"
+  }, 
+  "147": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }
+    ], 
+    "name": "sys_getsid"
+  }, 
+  "148": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }
+    ], 
+    "name": "sys_fdatasync"
+  }, 
+  "149": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "args"
+      }
+    ], 
+    "name": "sys_sysctl"
+  }, 
+  "150": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_mlock"
+  }, 
+  "151": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_munlock"
+  }, 
+  "152": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_mlockall"
+  }, 
+  "153": {
+    "args": [], 
+    "name": "sys_munlockall"
+  }, 
+  "154": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "param"
+      }
+    ], 
+    "name": "sys_sched_setparam"
+  }, 
+  "155": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "param"
+      }
+    ], 
+    "name": "sys_sched_getparam"
+  }, 
+  "156": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "policy"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "param"
+      }
+    ], 
+    "name": "sys_sched_setscheduler"
+  }, 
+  "157": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }
+    ], 
+    "name": "sys_sched_getscheduler"
+  }, 
+  "158": {
+    "args": [], 
+    "name": "sys_sched_yield"
+  }, 
+  "159": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "policy"
+      }
+    ], 
+    "name": "sys_sched_get_priority_max"
+  }, 
+  "160": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "policy"
+      }
+    ], 
+    "name": "sys_sched_get_priority_min"
+  }, 
+  "161": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "interval"
+      }
+    ], 
+    "name": "sys_sched_rr_get_interval"
+  }, 
+  "162": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "rqtp"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "rmtp"
+      }
+    ], 
+    "name": "sys_nanosleep"
+  }, 
+  "163": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "addr"
+      }, 
+      {
+        "type": "value", 
+        "name": "old_len"
+      }, 
+      {
+        "type": "value", 
+        "name": "new_len"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "value", 
+        "name": "new_addr"
+      }
+    ], 
+    "name": "sys_mremap"
+  }, 
+  "164": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ruid"
+      }, 
+      {
+        "type": "value", 
+        "name": "euid"
+      }, 
+      {
+        "type": "value", 
+        "name": "suid"
+      }
+    ], 
+    "name": "sys_setresuid16"
+  }, 
+  "165": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "ruid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "euid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "suid"
+      }
+    ], 
+    "name": "sys_getresuid16"
+  }, 
+  "166": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "value", 
+        "name": "long"
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_vm86"
+  }, 
+  "168": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "ufds"
+      }, 
+      {
+        "type": "value", 
+        "name": "nfds"
+      }, 
+      {
+        "type": "value", 
+        "name": "timeout"
+      }
+    ], 
+    "name": "sys_poll"
+  }, 
+  "169": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "arg"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "res"
+      }
+    ], 
+    "name": "sys_nfsservctl"
+  }, 
+  "170": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "rgid"
+      }, 
+      {
+        "type": "value", 
+        "name": "egid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sgid"
+      }
+    ], 
+    "name": "sys_setresgid16"
+  }, 
+  "171": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "rgid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "egid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "sgid"
+      }
+    ], 
+    "name": "sys_getresgid16"
+  }, 
+  "172": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "option"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg2"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg3"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg4"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg5"
+      }
+    ], 
+    "name": "sys_prctl"
+  }, 
+  "173": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_rt_sigreturn"
+  }, 
+  "174": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "sig"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "act"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "oact"
+      }, 
+      {
+        "type": "value", 
+        "name": "sigsetsize"
+      }
+    ], 
+    "name": "sys_rt_sigaction"
+  }, 
+  "175": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "how"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "set"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "oset"
+      }, 
+      {
+        "type": "value", 
+        "name": "sigsetsize"
+      }
+    ], 
+    "name": "sys_rt_sigprocmask"
+  }, 
+  "176": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "set"
+      }, 
+      {
+        "type": "value", 
+        "name": "sigsetsize"
+      }
+    ], 
+    "name": "sys_rt_sigpending"
+  }, 
+  "177": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "uthese"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "uinfo"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "uts"
+      }, 
+      {
+        "type": "value", 
+        "name": "sigsetsize"
+      }
+    ], 
+    "name": "sys_rt_sigtimedwait"
+  }, 
+  "178": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sig"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "uinfo"
+      }
+    ], 
+    "name": "sys_rt_sigqueueinfo"
+  }, 
+  "179": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "unewset"
+      }, 
+      {
+        "type": "value", 
+        "name": "sigsetsize"
+      }
+    ], 
+    "name": "sys_rt_sigsuspend"
+  }, 
+  "180": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }, 
+      {
+        "type": "value", 
+        "name": "pos"
+      }
+    ], 
+    "name": "sys_pread64"
+  }, 
+  "181": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }, 
+      {
+        "type": "value", 
+        "name": "pos"
+      }
+    ], 
+    "name": "sys_pwrite64"
+  }, 
+  "182": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }
+    ], 
+    "name": "sys_chown16"
+  }, 
+  "183": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_getcwd"
+  }, 
+  "184": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "header"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "dataptr"
+      }
+    ], 
+    "name": "sys_capget"
+  }, 
+  "185": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "header"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "data"
+      }
+    ], 
+    "name": "sys_capset"
+  }, 
+  "186": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }, 
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_sigaltstack"
+  }, 
+  "187": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "out_fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "in_fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_sendfile"
+  }, 
+  "190": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_vfork"
+  }, 
+  "191": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "resource"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "rlim"
+      }
+    ], 
+    "name": "sys_getrlimit"
+  }, 
+  "192": {
+    "args": [], 
+    "name": "sys_mmap_pgoff"
+  }, 
+  "193": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "value", 
+        "name": "length"
+      }
+    ], 
+    "name": "sys_truncate64"
+  }, 
+  "194": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "length"
+      }
+    ], 
+    "name": "sys_ftruncate64"
+  }, 
+  "195": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_stat64"
+  }, 
+  "196": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_lstat64"
+  }, 
+  "197": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }
+    ], 
+    "name": "sys_fstat64"
+  }, 
+  "198": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }
+    ], 
+    "name": "sys_lchown"
+  }, 
+  "199": {
+    "args": [], 
+    "name": "sys_getuid"
+  }, 
+  "200": {
+    "args": [], 
+    "name": "sys_getgid"
+  }, 
+  "201": {
+    "args": [], 
+    "name": "sys_geteuid"
+  }, 
+  "202": {
+    "args": [], 
+    "name": "sys_getegid"
+  }, 
+  "203": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ruid"
+      }, 
+      {
+        "type": "value", 
+        "name": "euid"
+      }
+    ], 
+    "name": "sys_setreuid"
+  }, 
+  "204": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "rgid"
+      }, 
+      {
+        "type": "value", 
+        "name": "egid"
+      }
+    ], 
+    "name": "sys_setregid"
+  }, 
+  "205": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gidsetsize"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "grouplist"
+      }
+    ], 
+    "name": "sys_getgroups"
+  }, 
+  "206": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gidsetsize"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "grouplist"
+      }
+    ], 
+    "name": "sys_setgroups"
+  }, 
+  "207": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }
+    ], 
+    "name": "sys_fchown"
+  }, 
+  "208": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ruid"
+      }, 
+      {
+        "type": "value", 
+        "name": "euid"
+      }, 
+      {
+        "type": "value", 
+        "name": "suid"
+      }
+    ], 
+    "name": "sys_setresuid"
+  }, 
+  "209": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "ruid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "euid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "suid"
+      }
+    ], 
+    "name": "sys_getresuid"
+  }, 
+  "210": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "rgid"
+      }, 
+      {
+        "type": "value", 
+        "name": "egid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sgid"
+      }
+    ], 
+    "name": "sys_setresgid"
+  }, 
+  "211": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "rgid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "egid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "sgid"
+      }
+    ], 
+    "name": "sys_getresgid"
+  }, 
+  "212": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }
+    ], 
+    "name": "sys_chown"
+  }, 
+  "213": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "uid"
+      }
+    ], 
+    "name": "sys_setuid"
+  }, 
+  "214": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gid"
+      }
+    ], 
+    "name": "sys_setgid"
+  }, 
+  "215": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "uid"
+      }
+    ], 
+    "name": "sys_setfsuid"
+  }, 
+  "216": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "gid"
+      }
+    ], 
+    "name": "sys_setfsgid"
+  }, 
+  "217": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "new_root"
+      }, 
+      {
+        "type": "string", 
+        "name": "put_old"
+      }
+    ], 
+    "name": "sys_pivot_root"
+  }, 
+  "218": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "string", 
+        "name": "vec"
+      }
+    ], 
+    "name": "sys_mincore"
+  }, 
+  "219": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "value", 
+        "name": "behavior"
+      }
+    ], 
+    "name": "sys_madvise"
+  }, 
+  "220": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "dirent"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_getdents64"
+  }, 
+  "221": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg"
+      }
+    ], 
+    "name": "sys_fcntl64"
+  }, 
+  "224": {
+    "args": [], 
+    "name": "sys_gettid"
+  }, 
+  "225": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_readahead"
+  }, 
+  "226": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_setxattr"
+  }, 
+  "227": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_lsetxattr"
+  }, 
+  "228": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_fsetxattr"
+  }, 
+  "229": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_getxattr"
+  }, 
+  "230": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_lgetxattr"
+  }, 
+  "231": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "value"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_fgetxattr"
+  }, 
+  "232": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "list"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_listxattr"
+  }, 
+  "233": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "list"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_llistxattr"
+  }, 
+  "234": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "list"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_flistxattr"
+  }, 
+  "235": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_removexattr"
+  }, 
+  "236": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_lremovexattr"
+  }, 
+  "237": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_fremovexattr"
+  }, 
+  "238": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sig"
+      }
+    ], 
+    "name": "sys_tkill"
+  }, 
+  "239": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "out_fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "in_fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_sendfile64"
+  }, 
+  "240": {
+    "args": [], 
+    "name": "sys_futex"
+  }, 
+  "241": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "user_mask_ptr"
+      }
+    ], 
+    "name": "sys_sched_setaffinity"
+  }, 
+  "242": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "user_mask_ptr"
+      }
+    ], 
+    "name": "sys_sched_getaffinity"
+  }, 
+  "243": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_set_thread_area"
+  }, 
+  "244": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_get_thread_area"
+  }, 
+  "245": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "nr_reqs"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "ctx"
+      }
+    ], 
+    "name": "sys_io_setup"
+  }, 
+  "246": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ctx"
+      }
+    ], 
+    "name": "sys_io_destroy"
+  }, 
+  "247": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ctx_id"
+      }, 
+      {
+        "type": "value", 
+        "name": "min_nr"
+      }, 
+      {
+        "type": "value", 
+        "name": "nr"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "events"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "timeout"
+      }
+    ], 
+    "name": "sys_io_getevents"
+  }, 
+  "248": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": ""
+      }
+    ], 
+    "name": "sys_io_submit"
+  }, 
+  "249": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ctx_id"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "iocb"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "result"
+      }
+    ], 
+    "name": "sys_io_cancel"
+  }, 
+  "250": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "value", 
+        "name": "advice"
+      }
+    ], 
+    "name": "sys_fadvise64"
+  }, 
+  "252": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "error_code"
+      }
+    ], 
+    "name": "sys_exit_group"
+  }, 
+  "253": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "cookie64"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_lookup_dcookie"
+  }, 
+  "254": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "size"
+      }
+    ], 
+    "name": "sys_epoll_create"
+  }, 
+  "255": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "epfd"
+      }, 
+      {
+        "type": "value", 
+        "name": "op"
+      }, 
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "event"
+      }
+    ], 
+    "name": "sys_epoll_ctl"
+  }, 
+  "256": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "epfd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "events"
+      }, 
+      {
+        "type": "value", 
+        "name": "maxevents"
+      }, 
+      {
+        "type": "value", 
+        "name": "timeout"
+      }
+    ], 
+    "name": "sys_epoll_wait"
+  }, 
+  "257": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "start"
+      }, 
+      {
+        "type": "value", 
+        "name": "size"
+      }, 
+      {
+        "type": "value", 
+        "name": "prot"
+      }, 
+      {
+        "type": "value", 
+        "name": "pgoff"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_remap_file_pages"
+  }, 
+  "258": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "tidptr"
+      }
+    ], 
+    "name": "sys_set_tid_address"
+  }, 
+  "259": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which_clock"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "timer_event_spec"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "created_timer_id"
+      }
+    ], 
+    "name": "sys_timer_create"
+  }, 
+  "260": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "timer_id"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "new_setting"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "old_setting"
+      }
+    ], 
+    "name": "sys_timer_settime"
+  }, 
+  "261": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "timer_id"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "setting"
+      }
+    ], 
+    "name": "sys_timer_gettime"
+  }, 
+  "262": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "timer_id"
+      }
+    ], 
+    "name": "sys_timer_getoverrun"
+  }, 
+  "263": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "timer_id"
+      }
+    ], 
+    "name": "sys_timer_delete"
+  }, 
+  "264": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which_clock"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tp"
+      }
+    ], 
+    "name": "sys_clock_settime"
+  }, 
+  "265": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which_clock"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tp"
+      }
+    ], 
+    "name": "sys_clock_gettime"
+  }, 
+  "266": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which_clock"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tp"
+      }
+    ], 
+    "name": "sys_clock_getres"
+  }, 
+  "267": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which_clock"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "rqtp"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "rmtp"
+      }
+    ], 
+    "name": "sys_clock_nanosleep"
+  }, 
+  "268": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "value", 
+        "name": "sz"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "buf"
+      }
+    ], 
+    "name": "sys_statfs64"
+  }, 
+  "269": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "sz"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "buf"
+      }
+    ], 
+    "name": "sys_fstatfs64"
+  }, 
+  "270": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "tgid"
+      }, 
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sig"
+      }
+    ], 
+    "name": "sys_tgkill"
+  }, 
+  "271": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "utimes"
+      }
+    ], 
+    "name": "sys_utimes"
+  }, 
+  "272": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "value", 
+        "name": "advice"
+      }
+    ], 
+    "name": "sys_fadvise64_64"
+  }, 
+  "274": {
+    "args": [], 
+    "name": "sys_mbind"
+  }, 
+  "275": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "policy"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "nmask"
+      }, 
+      {
+        "type": "value", 
+        "name": "maxnode"
+      }, 
+      {
+        "type": "value", 
+        "name": "addr"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_get_mempolicy"
+  }, 
+  "276": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "mode"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "nmask"
+      }, 
+      {
+        "type": "value", 
+        "name": "maxnode"
+      }
+    ], 
+    "name": "sys_set_mempolicy"
+  }, 
+  "277": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }, 
+      {
+        "type": "value", 
+        "name": "oflag"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "attr"
+      }
+    ], 
+    "name": "sys_mq_open"
+  }, 
+  "278": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "name"
+      }
+    ], 
+    "name": "sys_mq_unlink"
+  }, 
+  "279": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "mqdes"
+      }, 
+      {
+        "type": "string", 
+        "name": "msg_ptr"
+      }, 
+      {
+        "type": "value", 
+        "name": "msg_len"
+      }, 
+      {
+        "type": "value", 
+        "name": "msg_prio"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "abs_timeout"
+      }
+    ], 
+    "name": "sys_mq_timedsend"
+  }, 
+  "280": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "mqdes"
+      }, 
+      {
+        "type": "string", 
+        "name": "msg_ptr"
+      }, 
+      {
+        "type": "value", 
+        "name": "msg_len"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "msg_prio"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "abs_timeout"
+      }
+    ], 
+    "name": "sys_mq_timedreceive"
+  }, 
+  "281": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "mqdes"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "notification"
+      }
+    ], 
+    "name": "sys_mq_notify"
+  }, 
+  "282": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "mqdes"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "mqstat"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "omqstat"
+      }
+    ], 
+    "name": "sys_mq_getsetattr"
+  }, 
+  "283": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "entry"
+      }, 
+      {
+        "type": "value", 
+        "name": "nr_segments"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "segments"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_kexec_load"
+  }, 
+  "284": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "infop"
+      }, 
+      {
+        "type": "value", 
+        "name": "options"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "ru"
+      }
+    ], 
+    "name": "sys_waitid"
+  }, 
+  "286": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "_type"
+      }, 
+      {
+        "type": "string", 
+        "name": "_description"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "_payload"
+      }, 
+      {
+        "type": "value", 
+        "name": "plen"
+      }, 
+      {
+        "type": "value", 
+        "name": "destringid"
+      }
+    ], 
+    "name": "sys_add_key"
+  }, 
+  "287": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "_type"
+      }, 
+      {
+        "type": "string", 
+        "name": "_description"
+      }, 
+      {
+        "type": "string", 
+        "name": "_callout_info"
+      }, 
+      {
+        "type": "value", 
+        "name": "destringid"
+      }
+    ], 
+    "name": "sys_request_key"
+  }, 
+  "288": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "cmd"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg2"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg3"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg4"
+      }, 
+      {
+        "type": "value", 
+        "name": "arg5"
+      }
+    ], 
+    "name": "sys_keyctl"
+  }, 
+  "289": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "value", 
+        "name": "who"
+      }, 
+      {
+        "type": "value", 
+        "name": "ioprio"
+      }
+    ], 
+    "name": "sys_ioprio_set"
+  }, 
+  "290": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "which"
+      }, 
+      {
+        "type": "value", 
+        "name": "who"
+      }
+    ], 
+    "name": "sys_ioprio_get"
+  }, 
+  "291": {
+    "args": [], 
+    "name": "sys_inotify_init"
+  }, 
+  "292": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "value", 
+        "name": "mask"
+      }
+    ], 
+    "name": "sys_inotify_add_watch"
+  }, 
+  "293": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "wd"
+      }
+    ], 
+    "name": "sys_inotify_rm_watch"
+  }, 
+  "294": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "maxnode"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "from"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "to"
+      }
+    ], 
+    "name": "sys_migrate_pages"
+  }, 
+  "295": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_openat"
+  }, 
+  "296": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "pathname"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_mkdirat"
+  }, 
+  "297": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }, 
+      {
+        "type": "value", 
+        "name": "dev"
+      }
+    ], 
+    "name": "sys_mknodat"
+  }, 
+  "298": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "user"
+      }, 
+      {
+        "type": "value", 
+        "name": "group"
+      }, 
+      {
+        "type": "value", 
+        "name": "flag"
+      }
+    ], 
+    "name": "sys_fchownat"
+  }, 
+  "299": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "utimes"
+      }
+    ], 
+    "name": "sys_futimesat"
+  }, 
+  "300": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "statbuf"
+      }, 
+      {
+        "type": "value", 
+        "name": "flag"
+      }
+    ], 
+    "name": "sys_fstatat64"
+  }, 
+  "301": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "pathname"
+      }, 
+      {
+        "type": "value", 
+        "name": "flag"
+      }
+    ], 
+    "name": "sys_unlinkat"
+  }, 
+  "302": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "olddfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "oldname"
+      }, 
+      {
+        "type": "value", 
+        "name": "newdfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "newname"
+      }
+    ], 
+    "name": "sys_renameat"
+  }, 
+  "303": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "olddfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "oldname"
+      }, 
+      {
+        "type": "value", 
+        "name": "newdfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "newname"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_linkat"
+  }, 
+  "304": {
+    "args": [
+      {
+        "type": "string", 
+        "name": "oldname"
+      }, 
+      {
+        "type": "value", 
+        "name": "newdfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "newname"
+      }
+    ], 
+    "name": "sys_symlinkat"
+  }, 
+  "305": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "path"
+      }, 
+      {
+        "type": "string", 
+        "name": "buf"
+      }, 
+      {
+        "type": "value", 
+        "name": "bufsiz"
+      }
+    ], 
+    "name": "sys_readlinkat"
+  }, 
+  "306": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_fchmodat"
+  }, 
+  "307": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }
+    ], 
+    "name": "sys_faccessat"
+  }, 
+  "308": {
+    "args": [], 
+    "name": "sys_pselect6"
+  }, 
+  "309": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "ufds"
+      }, 
+      {
+        "type": "value", 
+        "name": "nfds"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "tsp"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "sigmask"
+      }, 
+      {
+        "type": "value", 
+        "name": "sigsetsize"
+      }
+    ], 
+    "name": "sys_ppoll"
+  }, 
+  "310": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "unshare_flags"
+      }
+    ], 
+    "name": "sys_unshare"
+  }, 
+  "311": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "head"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_set_robust_list"
+  }, 
+  "312": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "head_ptr"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "len_ptr"
+      }
+    ], 
+    "name": "sys_get_robust_list"
+  }, 
+  "313": {
+    "args": [], 
+    "name": "sys_splice"
+  }, 
+  "314": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "nbytes"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_sync_file_range"
+  }, 
+  "315": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fdin"
+      }, 
+      {
+        "type": "value", 
+        "name": "fdout"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_tee"
+  }, 
+  "316": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "iov"
+      }, 
+      {
+        "type": "value", 
+        "name": "nr_segs"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_vmsplice"
+  }, 
+  "317": {
+    "args": [], 
+    "name": "sys_move_pages"
+  }, 
+  "318": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "cpu"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "node"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "cache"
+      }
+    ], 
+    "name": "sys_getcpu"
+  }, 
+  "319": {
+    "args": [], 
+    "name": "sys_epoll_pwait"
+  }, 
+  "320": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "dfd"
+      }, 
+      {
+        "type": "string", 
+        "name": "filename"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "utimes"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_utimensat"
+  }, 
+  "321": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ufd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "user_mask"
+      }, 
+      {
+        "type": "value", 
+        "name": "sizemask"
+      }
+    ], 
+    "name": "sys_signalfd"
+  }, 
+  "322": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "clockid"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_timerfd_create"
+  }, 
+  "323": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "count"
+      }
+    ], 
+    "name": "sys_eventfd"
+  }, 
+  "324": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "mode"
+      }, 
+      {
+        "type": "value", 
+        "name": "offset"
+      }, 
+      {
+        "type": "value", 
+        "name": "len"
+      }
+    ], 
+    "name": "sys_fallocate"
+  }, 
+  "325": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ufd"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "utmr"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "otmr"
+      }
+    ], 
+    "name": "sys_timerfd_settime"
+  }, 
+  "326": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ufd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "otmr"
+      }
+    ], 
+    "name": "sys_timerfd_gettime"
+  }, 
+  "327": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "ufd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "user_mask"
+      }, 
+      {
+        "type": "value", 
+        "name": "sizemask"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_signalfd4"
+  }, 
+  "328": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "count"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_eventfd2"
+  }, 
+  "329": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_epoll_create1"
+  }, 
+  "330": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "oldfd"
+      }, 
+      {
+        "type": "value", 
+        "name": "newfd"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_dup3"
+  }, 
+  "331": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "fildes"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_pipe2"
+  }, 
+  "332": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_inotify_init1"
+  }, 
+  "333": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "vec"
+      }, 
+      {
+        "type": "value", 
+        "name": "vlen"
+      }, 
+      {
+        "type": "value", 
+        "name": "pos_l"
+      }, 
+      {
+        "type": "value", 
+        "name": "pos_h"
+      }
+    ], 
+    "name": "sys_preadv"
+  }, 
+  "334": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "vec"
+      }, 
+      {
+        "type": "value", 
+        "name": "vlen"
+      }, 
+      {
+        "type": "value", 
+        "name": "pos_l"
+      }, 
+      {
+        "type": "value", 
+        "name": "pos_h"
+      }
+    ], 
+    "name": "sys_pwritev"
+  }, 
+  "335": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "tgid"
+      }, 
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "sig"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "uinfo"
+      }
+    ], 
+    "name": "sys_rt_tgsigqueueinfo"
+  }, 
+  "336": {
+    "args": [
+      {
+        "type": "pointer", 
+        "name": "attr_uptr"
+      }, 
+      {
+        "type": "value", 
+        "name": "pid"
+      }, 
+      {
+        "type": "value", 
+        "name": "cpu"
+      }, 
+      {
+        "type": "value", 
+        "name": "group_fd"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }
+    ], 
+    "name": "sys_perf_event_open"
+  }, 
+  "337": {
+    "args": [
+      {
+        "type": "value", 
+        "name": "fd"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "msg"
+      }, 
+      {
+        "type": "value", 
+        "name": "vlen"
+      }, 
+      {
+        "type": "value", 
+        "name": "flags"
+      }, 
+      {
+        "type": "pointer", 
+        "name": "timeout"
+      }
+    ], 
+    "name": "sys_recvmmsg"
+  }
+}
