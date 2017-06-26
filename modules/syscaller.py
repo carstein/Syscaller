@@ -9,8 +9,8 @@ from binaryninja import *
 syscalls_32_db = 'syscalls_32.json'
 
 # Simple database loader - assume all is in one file for now
-def load_database(data_path):
-  fh = open(os.path.dirname(__file__)+'/../data/' + data_path, 'r')
+def load_database(data_db):
+  fh = open(user_plugin_path + '/syscaller/data/' + data_db, 'r')
   return json.load(fh)
 
 # Function to be executed when we invoke plugin
@@ -26,13 +26,12 @@ def run_plugin(bv, function):
   for block in function.low_level_il:
     for instruction in block:
       if instruction.operation == LowLevelILOperation.LLIL_SYSCALL:
-        syscall = db[str(function.get_reg_value_at_low_level_il_instruction(
-                          instruction.instr_index, registers[0]).value)] # Get corresponding syscall
+        syscall = db[str(instruction.get_reg_value(registers[0]).value)] # Get corresponding syscall
 
         args = []
         # construct arguments
         for i, arg in enumerate(syscall['args']):
-          arg_value = function.get_reg_value_at_low_level_il_instruction(instruction.instr_index, registers[i+1]).value
+          arg_value = instruction.get_reg_value(registers[i+1]).value
 
           if arg['type'] == 'value':
             value = arg_value
