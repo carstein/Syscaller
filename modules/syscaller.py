@@ -6,7 +6,10 @@ import sys
 import json
 from binaryninja import *
 
-syscalls_32_db = 'syscalls_32.json'
+supported_platforms = {
+    'linux-x86': 'syscalls_32.json',
+    'linux-x86_64': 'syscalls_64.json'
+}
 
 # Simple database loader - assume all is in one file for now
 def load_database(data_db):
@@ -16,11 +19,11 @@ def load_database(data_db):
 # Function to be executed when we invoke plugin
 def run_plugin(bv, function):
   # logic of platform selection
-  if bv.platform.name != 'linux-x86':
-    log_error('[x] Right now this pluggin support only linux-x86 platform')
+  if bv.platform.name not in supported_platforms:
+    log_error('[x] Right now this plugin supports only the following platforms: ' + str(supported_platforms.keys()))
     return -1
 
-  db = load_database(syscalls_32_db)
+  db = load_database(supported_platforms[bv.platform.name])
   registers = bv.platform.system_call_convention.int_arg_regs
 
   for block in function.low_level_il:
