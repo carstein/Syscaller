@@ -29,12 +29,21 @@ def run_plugin(bv, function):
   for block in function.low_level_il:
     for instruction in block:
       if instruction.operation == LowLevelILOperation.LLIL_SYSCALL:
-        syscall = db[str(instruction.get_reg_value(registers[0]).value)] # Get corresponding syscall
-
+        possible_value = instruction.get_reg_value(registers[0])
+        if(hasattr(possible_value, 'value')):
+          syscall = db[str(possible_value.value)] # Get corresponding syscall
+        else:
+          syscall = {'name': 'Unknown Syscall', 'args': []}
         args = []
         # construct arguments
         for i, arg in enumerate(syscall['args']):
-          arg_value = instruction.get_reg_value(registers[i+1]).value
+          possible_arg_value = instruction.get_reg_value(registers[i+1])
+          if(hasattr(possible_arg_value, 'value')):
+            arg_value = possible_arg_value.value
+          else:
+            s = '{}: {}'.format(arg['name'], 'Unknown')
+            args.append(s)
+            continue
 
           if arg['type'] == 'value':
             value = arg_value
