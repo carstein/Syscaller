@@ -13,7 +13,9 @@ supported_platforms = {
 
 # Simple database loader - assume all is in one file for now
 def load_database(data_db):
-  fh = open(user_plugin_path + '/syscaller/data/' + data_db, 'r')
+  current_file_path = os.path.dirname(os.path.abspath(__file__))
+  data_db_path = os.path.join(current_file_path, '..', 'data', data_db)
+  fh = open(data_db_path, 'r')
   return json.load(fh)
 
 # Function to be executed when we invoke plugin
