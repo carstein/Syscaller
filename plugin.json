@@ -2,7 +2,7 @@
 	"plugin": {
 		"name": "Syscaller",
 		"type": ["binaryview"],
-		"api": "python2",
+		"api": "python3",
 		"description": "A plugins that print out details about encountered syscalls.",
 		"longdescription": "",
 		"license": {
@@ -15,10 +15,10 @@
 			"installers": [],
 			"other": []
 		},
-		"version": "0.1",
+		"version": "0.2",
 		"author": "Michal Melewski <michal.melewski@gmail.com>",
 		"minimumBinaryNinjaVersion": {
-			"dev": "1.0.dev-794",
+			"dev": "1.1.1760-dev",
 			"release": "1.0.776"
 		}
 	}
