@@ -9,5 +9,10 @@ from .modules import syscaller
 # register plugin
 PluginCommand.register_for_function(
   "Syscaller\Decorate syscalls in current function",
-  "Annotate syscalls with arguments",
-  syscaller.run_plugin)
+  "Annotate syscalls with arguments in current function",
+  syscaller.run_plugin_current)
+
+PluginCommand.register(
+  "Syscaller\Decorate syscalls in all functions",
+  "Annotate syscalls with arguments in all defined functions",
+  syscaller.run_plugin_all)
