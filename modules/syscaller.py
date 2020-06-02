@@ -76,7 +76,6 @@ class SyscallerTask(bn.BackgroundTaskThread):
                 args.append(s)
                 continue
 
-              assert arg_value is not None
               if arg['type'] == 'value':
                 value = arg_value
               if arg['type'] == 'pointer':
