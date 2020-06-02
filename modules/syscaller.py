@@ -56,7 +56,7 @@ class SyscallerTask(bn.BackgroundTaskThread):
           if instruction.operation == bn.LowLevelILOperation.LLIL_SYSCALL:
             possible_value = instruction.get_reg_value(self.registers[0])
 
-            if(hasattr(possible_value, 'value')):
+            if(possible_value.is_constant):
               syscall = self.db[str(possible_value.value)] # Get corresponding syscall
             else:
               syscall = {'name': 'Unknown Syscall', 'args': []}
@@ -69,13 +69,14 @@ class SyscallerTask(bn.BackgroundTaskThread):
             for i, arg in enumerate(syscall['args']):
               possible_arg_value = instruction.get_reg_value(self.registers[i+1])
 
-              if(hasattr(possible_arg_value, 'value')):
+              if(possible_arg_value.is_constant):
                 arg_value = possible_arg_value.value
               else:
                 s = '{}: {}'.format(arg['name'], 'Unknown')
                 args.append(s)
                 continue
 
+              assert arg_value is not None
               if arg['type'] == 'value':
                 value = arg_value
               if arg['type'] == 'pointer':
