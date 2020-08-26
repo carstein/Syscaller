@@ -1,5 +1,5 @@
 # Author: carstein <michal.melewski@gmail.com>
-# Syscaller - decoreate syscall with arguments
+# Syscaller - decorate syscall with arguments
 
 import os
 import sys
@@ -9,7 +9,18 @@ import binaryninja as bn
 
 supported_platforms = {
     'linux-x86': 'syscalls_32.json',
-    'linux-x86_64': 'syscalls_64.json'
+    'linux-x86_64': 'syscalls_64.json',
+    'linux-aarch64': 'syscalls_aarch64.json',
+    'linux-armv7': 'syscalls_arm.json',
+    'linux-thumb2': 'syscalls_arm.json',
+    'linux-armv7eb': 'syscalls_arm.json',
+    'linux-thumb2eb': 'syscalls_arm.json',
+    'linux-mipsel': 'syscalls_mips32.json',
+    'linux-mips': 'syscalls_mips32.json',
+    'linux-ppc32': 'syscalls_ppc32.json',
+    'linux-ppc32_le': 'syscalls_ppc32.json',
+    'linux-ppc64': 'syscalls_ppc64.json',
+    'linux-ppc64_le': 'syscalls_ppc64.json',
 }
 
 # Simple database loader - assume all is in one file for now
