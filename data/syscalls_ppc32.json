@@ -1349,11 +1349,15 @@
   "113":{
     "args":[
       {
+        "type":"value",
+        "name":"fn"
+      },
+      {
         "type":"pointer",
-        "name":"info"
+        "name":"v86"
       }
     ],
-    "name":"vm86old"
+    "name":"vm86"
   },
   "114":{
     "args":[
@@ -2062,19 +2066,6 @@
   "166":{
     "args":[
       {
-        "type":"value",
-        "name":"fn"
-      },
-      {
-        "type":"pointer",
-        "name":"v86"
-      }
-    ],
-    "name":"vm86"
-  },
-  "167":{
-    "args":[
-      {
         "type":"string",
         "name":"name"
       },
@@ -2097,7 +2088,7 @@
     ],
     "name":"query_module"
   },
-  "168":{
+  "167":{
     "args":[
       {
         "type":"pointer",
@@ -2114,7 +2105,7 @@
     ],
     "name":"poll"
   },
-  "169":{
+  "168":{
     "args":[
       {
         "type":"value",
@@ -2131,7 +2122,7 @@
     ],
     "name":"nfsservctl"
   },
-  "170":{
+  "169":{
     "args":[
       {
         "type":"value",
@@ -2148,7 +2139,7 @@
     ],
     "name":"setresgid"
   },
-  "171":{
+  "170":{
     "args":[
       {
         "type":"pointer",
@@ -2165,7 +2156,7 @@
     ],
     "name":"getresgid"
   },
-  "172":{
+  "171":{
     "args":[
       {
         "type":"value",
@@ -2190,13 +2181,13 @@
     ],
     "name":"prctl"
   },
-  "173":{
+  "172":{
     "args":[
       
     ],
     "name":"rt_sigreturn"
   },
-  "174":{
+  "173":{
     "args":[
       {
         "type":"value",
@@ -2217,7 +2208,7 @@
     ],
     "name":"rt_sigaction"
   },
-  "175":{
+  "174":{
     "args":[
       {
         "type":"value",
@@ -2238,7 +2229,7 @@
     ],
     "name":"rt_sigprocmask"
   },
-  "176":{
+  "175":{
     "args":[
       {
         "type":"pointer",
@@ -2251,7 +2242,7 @@
     ],
     "name":"rt_sigpending"
   },
-  "177":{
+  "176":{
     "args":[
       {
         "type":"pointer",
@@ -2272,7 +2263,7 @@
     ],
     "name":"rt_sigtimedwait"
   },
-  "178":{
+  "177":{
     "args":[
       {
         "type":"value",
@@ -2289,7 +2280,7 @@
     ],
     "name":"rt_sigqueueinfo"
   },
-  "179":{
+  "178":{
     "args":[
       {
         "type":"pointer",
@@ -2302,7 +2293,7 @@
     ],
     "name":"rt_sigsuspend"
   },
-  "180":{
+  "179":{
     "args":[
       {
         "type":"value",
@@ -2323,7 +2314,7 @@
     ],
     "name":"pread64"
   },
-  "181":{
+  "180":{
     "args":[
       {
         "type":"value",
@@ -2344,7 +2335,7 @@
     ],
     "name":"pwrite64"
   },
-  "182":{
+  "181":{
     "args":[
       {
         "type":"string",
@@ -2361,7 +2352,7 @@
     ],
     "name":"chown"
   },
-  "183":{
+  "182":{
     "args":[
       {
         "type":"string",
@@ -2374,7 +2365,7 @@
     ],
     "name":"getcwd"
   },
-  "184":{
+  "183":{
     "args":[
       {
         "type":"value",
@@ -2387,7 +2378,7 @@
     ],
     "name":"capget"
   },
-  "185":{
+  "184":{
     "args":[
       {
         "type":"value",
@@ -2400,7 +2391,7 @@
     ],
     "name":"capset"
   },
-  "186":{
+  "185":{
     "args":[
       {
         "type":"pointer",
@@ -2413,7 +2404,7 @@
     ],
     "name":"sigaltstack"
   },
-  "187":{
+  "186":{
     "args":[
       {
         "type":"value",
@@ -2434,7 +2425,7 @@
     ],
     "name":"sendfile"
   },
-  "188":{
+  "187":{
     "args":[
       {
         "type":"value",
@@ -2459,7 +2450,7 @@
     ],
     "name":"getpmsg"
   },
-  "189":{
+  "188":{
     "args":[
       {
         "type":"value",
@@ -2484,13 +2475,13 @@
     ],
     "name":"putpmsg"
   },
-  "190":{
+  "189":{
     "args":[
       
     ],
     "name":"vfork"
   },
-  "191":{
+  "190":{
     "args":[
       {
         "type":"value",
@@ -2502,6 +2493,23 @@
       }
     ],
     "name":"ugetrlimit"
+  },
+  "191":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"offset"
+      },
+      {
+        "type":"value",
+        "name":"count"
+      }
+    ],
+    "name":"readahead"
   },
   "192":{
     "args":[
@@ -2600,282 +2608,77 @@
   "198":{
     "args":[
       {
-        "type":"string",
-        "name":"pathname"
+        "type":"value",
+        "name":"bus"
       },
       {
         "type":"value",
-        "name":"owner"
+        "name":"dfn"
       },
       {
         "type":"value",
-        "name":"group"
+        "name":"off"
+      },
+      {
+        "type":"value",
+        "name":"len"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
       }
     ],
-    "name":"lchown32"
+    "name":"pciconfig_read"
   },
   "199":{
     "args":[
-      
+      {
+        "type":"value",
+        "name":"bus"
+      },
+      {
+        "type":"value",
+        "name":"dfn"
+      },
+      {
+        "type":"value",
+        "name":"off"
+      },
+      {
+        "type":"value",
+        "name":"len"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
     ],
-    "name":"getuid32"
+    "name":"pciconfig_write"
   },
   "200":{
     "args":[
-      
+      {
+        "type":"value",
+        "name":"which"
+      },
+      {
+        "type":"value",
+        "name":"bus"
+      },
+      {
+        "type":"value",
+        "name":"devfn"
+      }
     ],
-    "name":"getgid32"
+    "name":"pciconfig_iobase"
   },
   "201":{
     "args":[
       
     ],
-    "name":"geteuid32"
+    "name":"multiplexer"
   },
   "202":{
-    "args":[
-      
-    ],
-    "name":"getegid32"
-  },
-  "203":{
-    "args":[
-      {
-        "type":"value",
-        "name":"ruid"
-      },
-      {
-        "type":"value",
-        "name":"euid"
-      }
-    ],
-    "name":"setreuid32"
-  },
-  "204":{
-    "args":[
-      {
-        "type":"value",
-        "name":"rgid"
-      },
-      {
-        "type":"value",
-        "name":"egid"
-      }
-    ],
-    "name":"setregid32"
-  },
-  "205":{
-    "args":[
-      {
-        "type":"value",
-        "name":"size"
-      },
-      {
-        "type":"pointer",
-        "name":"list"
-      }
-    ],
-    "name":"getgroups32"
-  },
-  "206":{
-    "args":[
-      {
-        "type":"value",
-        "name":"size"
-      },
-      {
-        "type":"pointer",
-        "name":"list"
-      }
-    ],
-    "name":"setgroups32"
-  },
-  "207":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"value",
-        "name":"owner"
-      },
-      {
-        "type":"value",
-        "name":"group"
-      }
-    ],
-    "name":"fchown32"
-  },
-  "208":{
-    "args":[
-      {
-        "type":"value",
-        "name":"ruid"
-      },
-      {
-        "type":"value",
-        "name":"euid"
-      },
-      {
-        "type":"value",
-        "name":"suid"
-      }
-    ],
-    "name":"setresuid32"
-  },
-  "209":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"ruid"
-      },
-      {
-        "type":"pointer",
-        "name":"euid"
-      },
-      {
-        "type":"pointer",
-        "name":"suid"
-      }
-    ],
-    "name":"getresuid32"
-  },
-  "210":{
-    "args":[
-      {
-        "type":"value",
-        "name":"rgid"
-      },
-      {
-        "type":"value",
-        "name":"egid"
-      },
-      {
-        "type":"value",
-        "name":"sgid"
-      }
-    ],
-    "name":"setresgid32"
-  },
-  "211":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"rgid"
-      },
-      {
-        "type":"pointer",
-        "name":"egid"
-      },
-      {
-        "type":"pointer",
-        "name":"sgid"
-      }
-    ],
-    "name":"getresgid32"
-  },
-  "212":{
-    "args":[
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"owner"
-      },
-      {
-        "type":"value",
-        "name":"group"
-      }
-    ],
-    "name":"chown32"
-  },
-  "213":{
-    "args":[
-      {
-        "type":"value",
-        "name":"uid"
-      }
-    ],
-    "name":"setuid32"
-  },
-  "214":{
-    "args":[
-      {
-        "type":"value",
-        "name":"gid"
-      }
-    ],
-    "name":"setgid32"
-  },
-  "215":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fsuid"
-      }
-    ],
-    "name":"setfsuid32"
-  },
-  "216":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fsgid"
-      }
-    ],
-    "name":"setfsgid32"
-  },
-  "217":{
-    "args":[
-      {
-        "type":"string",
-        "name":"new_root"
-      },
-      {
-        "type":"string",
-        "name":"put_old"
-      }
-    ],
-    "name":"pivot_root"
-  },
-  "218":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"value",
-        "name":"length"
-      },
-      {
-        "type":"string",
-        "name":"vec"
-      }
-    ],
-    "name":"mincore"
-  },
-  "219":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"value",
-        "name":"length"
-      },
-      {
-        "type":"value",
-        "name":"advice"
-      }
-    ],
-    "name":"madvise"
-  },
-  "220":{
     "args":[
       {
         "type":"value",
@@ -2892,7 +2695,20 @@
     ],
     "name":"getdents64"
   },
-  "221":{
+  "203":{
+    "args":[
+      {
+        "type":"string",
+        "name":"new_root"
+      },
+      {
+        "type":"string",
+        "name":"put_old"
+      }
+    ],
+    "name":"pivot_root"
+  },
+  "204":{
     "args":[
       {
         "type":"value",
@@ -2909,30 +2725,60 @@
     ],
     "name":"fcntl64"
   },
-  "224":{
+  "205":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"value",
+        "name":"length"
+      },
+      {
+        "type":"value",
+        "name":"advice"
+      }
+    ],
+    "name":"madvise"
+  },
+  "206":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"value",
+        "name":"length"
+      },
+      {
+        "type":"string",
+        "name":"vec"
+      }
+    ],
+    "name":"mincore"
+  },
+  "207":{
     "args":[
       
     ],
     "name":"gettid"
   },
-  "225":{
+  "208":{
     "args":[
       {
         "type":"value",
-        "name":"fd"
+        "name":"tid"
       },
       {
         "type":"value",
-        "name":"offset"
-      },
-      {
-        "type":"value",
-        "name":"count"
+        "name":"sig"
       }
     ],
-    "name":"readahead"
+    "name":"tkill"
   },
-  "226":{
+  "209":{
     "args":[
       {
         "type":"string",
@@ -2957,7 +2803,7 @@
     ],
     "name":"setxattr"
   },
-  "227":{
+  "210":{
     "args":[
       {
         "type":"string",
@@ -2982,7 +2828,7 @@
     ],
     "name":"lsetxattr"
   },
-  "228":{
+  "211":{
     "args":[
       {
         "type":"value",
@@ -3007,7 +2853,7 @@
     ],
     "name":"fsetxattr"
   },
-  "229":{
+  "212":{
     "args":[
       {
         "type":"string",
@@ -3028,7 +2874,7 @@
     ],
     "name":"getxattr"
   },
-  "230":{
+  "213":{
     "args":[
       {
         "type":"string",
@@ -3049,7 +2895,7 @@
     ],
     "name":"lgetxattr"
   },
-  "231":{
+  "214":{
     "args":[
       {
         "type":"value",
@@ -3070,7 +2916,7 @@
     ],
     "name":"fgetxattr"
   },
-  "232":{
+  "215":{
     "args":[
       {
         "type":"string",
@@ -3087,7 +2933,7 @@
     ],
     "name":"listxattr"
   },
-  "233":{
+  "216":{
     "args":[
       {
         "type":"string",
@@ -3104,7 +2950,7 @@
     ],
     "name":"llistxattr"
   },
-  "234":{
+  "217":{
     "args":[
       {
         "type":"value",
@@ -3121,7 +2967,7 @@
     ],
     "name":"flistxattr"
   },
-  "235":{
+  "218":{
     "args":[
       {
         "type":"string",
@@ -3134,7 +2980,7 @@
     ],
     "name":"removexattr"
   },
-  "236":{
+  "219":{
     "args":[
       {
         "type":"string",
@@ -3147,7 +2993,7 @@
     ],
     "name":"lremovexattr"
   },
-  "237":{
+  "220":{
     "args":[
       {
         "type":"value",
@@ -3160,41 +3006,7 @@
     ],
     "name":"fremovexattr"
   },
-  "238":{
-    "args":[
-      {
-        "type":"value",
-        "name":"tid"
-      },
-      {
-        "type":"value",
-        "name":"sig"
-      }
-    ],
-    "name":"tkill"
-  },
-  "239":{
-    "args":[
-      {
-        "type":"value",
-        "name":"out_fd"
-      },
-      {
-        "type":"value",
-        "name":"in_fd"
-      },
-      {
-        "type":"pointer",
-        "name":"offset"
-      },
-      {
-        "type":"value",
-        "name":"count"
-      }
-    ],
-    "name":"sendfile64"
-  },
-  "240":{
+  "221":{
     "args":[
       {
         "type":"pointer",
@@ -3223,7 +3035,7 @@
     ],
     "name":"futex"
   },
-  "241":{
+  "222":{
     "args":[
       {
         "type":"value",
@@ -3240,7 +3052,7 @@
     ],
     "name":"sched_setaffinity"
   },
-  "242":{
+  "223":{
     "args":[
       {
         "type":"value",
@@ -3257,25 +3069,34 @@
     ],
     "name":"sched_getaffinity"
   },
-  "243":{
+  "225":{
+    "args":[
+      
+    ],
+    "name":"tuxcall"
+  },
+  "226":{
     "args":[
       {
-        "type":"pointer",
-        "name":"u_info"
-      }
-    ],
-    "name":"set_thread_area"
-  },
-  "244":{
-    "args":[
+        "type":"value",
+        "name":"out_fd"
+      },
+      {
+        "type":"value",
+        "name":"in_fd"
+      },
       {
         "type":"pointer",
-        "name":"u_info"
+        "name":"offset"
+      },
+      {
+        "type":"value",
+        "name":"count"
       }
     ],
-    "name":"get_thread_area"
+    "name":"sendfile64"
   },
-  "245":{
+  "227":{
     "args":[
       {
         "type":"value",
@@ -3288,7 +3109,7 @@
     ],
     "name":"io_setup"
   },
-  "246":{
+  "228":{
     "args":[
       {
         "type":"value",
@@ -3297,7 +3118,7 @@
     ],
     "name":"io_destroy"
   },
-  "247":{
+  "229":{
     "args":[
       {
         "type":"value",
@@ -3322,7 +3143,7 @@
     ],
     "name":"io_getevents"
   },
-  "248":{
+  "230":{
     "args":[
       {
         "type":"value",
@@ -3339,7 +3160,7 @@
     ],
     "name":"io_submit"
   },
-  "249":{
+  "231":{
     "args":[
       {
         "type":"value",
@@ -3356,7 +3177,16 @@
     ],
     "name":"io_cancel"
   },
-  "250":{
+  "232":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"tidptr"
+      }
+    ],
+    "name":"set_tid_address"
+  },
+  "233":{
     "args":[
       {
         "type":"value",
@@ -3377,7 +3207,7 @@
     ],
     "name":"fadvise64"
   },
-  "252":{
+  "234":{
     "args":[
       {
         "type":"value",
@@ -3386,7 +3216,7 @@
     ],
     "name":"exit_group"
   },
-  "253":{
+  "235":{
     "args":[
       {
         "type":"value",
@@ -3403,7 +3233,7 @@
     ],
     "name":"lookup_dcookie"
   },
-  "254":{
+  "236":{
     "args":[
       {
         "type":"value",
@@ -3412,7 +3242,7 @@
     ],
     "name":"epoll_create"
   },
-  "255":{
+  "237":{
     "args":[
       {
         "type":"value",
@@ -3433,7 +3263,7 @@
     ],
     "name":"epoll_ctl"
   },
-  "256":{
+  "238":{
     "args":[
       {
         "type":"value",
@@ -3454,7 +3284,7 @@
     ],
     "name":"epoll_wait"
   },
-  "257":{
+  "239":{
     "args":[
       {
         "type":"pointer",
@@ -3479,16 +3309,7 @@
     ],
     "name":"remap_file_pages"
   },
-  "258":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"tidptr"
-      }
-    ],
-    "name":"set_tid_address"
-  },
-  "259":{
+  "240":{
     "args":[
       {
         "type":"value",
@@ -3505,7 +3326,7 @@
     ],
     "name":"timer_create"
   },
-  "260":{
+  "241":{
     "args":[
       {
         "type":"value",
@@ -3526,7 +3347,7 @@
     ],
     "name":"timer_settime"
   },
-  "261":{
+  "242":{
     "args":[
       {
         "type":"value",
@@ -3539,7 +3360,7 @@
     ],
     "name":"timer_gettime"
   },
-  "262":{
+  "243":{
     "args":[
       {
         "type":"value",
@@ -3548,7 +3369,7 @@
     ],
     "name":"timer_getoverrun"
   },
-  "263":{
+  "244":{
     "args":[
       {
         "type":"value",
@@ -3557,7 +3378,7 @@
     ],
     "name":"timer_delete"
   },
-  "264":{
+  "245":{
     "args":[
       {
         "type":"value",
@@ -3570,7 +3391,7 @@
     ],
     "name":"clock_settime"
   },
-  "265":{
+  "246":{
     "args":[
       {
         "type":"value",
@@ -3583,7 +3404,7 @@
     ],
     "name":"clock_gettime"
   },
-  "266":{
+  "247":{
     "args":[
       {
         "type":"value",
@@ -3596,7 +3417,7 @@
     ],
     "name":"clock_getres"
   },
-  "267":{
+  "248":{
     "args":[
       {
         "type":"value",
@@ -3617,33 +3438,20 @@
     ],
     "name":"clock_nanosleep"
   },
-  "268":{
+  "249":{
     "args":[
       {
-        "type":"string",
-        "name":"path"
+        "type":"pointer",
+        "name":"old_ctx"
       },
       {
         "type":"pointer",
-        "name":"buf"
+        "name":"new_ctx"
       }
     ],
-    "name":"statfs64"
+    "name":"swapcontext"
   },
-  "269":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"pointer",
-        "name":"buf"
-      }
-    ],
-    "name":"fstatfs64"
-  },
-  "270":{
+  "250":{
     "args":[
       {
         "type":"value",
@@ -3660,7 +3468,7 @@
     ],
     "name":"tgkill"
   },
-  "271":{
+  "251":{
     "args":[
       {
         "type":"string",
@@ -3673,7 +3481,33 @@
     ],
     "name":"utimes"
   },
-  "272":{
+  "252":{
+    "args":[
+      {
+        "type":"string",
+        "name":"path"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
+    ],
+    "name":"statfs64"
+  },
+  "253":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
+    ],
+    "name":"fstatfs64"
+  },
+  "254":{
     "args":[
       {
         "type":"value",
@@ -3694,13 +3528,60 @@
     ],
     "name":"fadvise64_64"
   },
-  "273":{
+  "255":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"uargs"
+      }
+    ],
+    "name":"rtas"
+  },
+  "256":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"ctx"
+      },
+      {
+        "type":"value",
+        "name":"ndbg"
+      },
+      {
+        "type":"pointer",
+        "name":"dbg"
+      }
+    ],
+    "name":"sys_debug_setcontext"
+  },
+  "257":{
     "args":[
       
     ],
     "name":"vserver"
   },
-  "274":{
+  "258":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"value",
+        "name":"maxnode"
+      },
+      {
+        "type":"pointer",
+        "name":"old_nodes"
+      },
+      {
+        "type":"pointer",
+        "name":"new_nodes"
+      }
+    ],
+    "name":"migrate_pages"
+  },
+  "259":{
     "args":[
       {
         "type":"pointer",
@@ -3729,7 +3610,7 @@
     ],
     "name":"mbind"
   },
-  "275":{
+  "260":{
     "args":[
       {
         "type":"pointer",
@@ -3754,7 +3635,7 @@
     ],
     "name":"get_mempolicy"
   },
-  "276":{
+  "261":{
     "args":[
       {
         "type":"value",
@@ -3771,7 +3652,7 @@
     ],
     "name":"set_mempolicy"
   },
-  "277":{
+  "262":{
     "args":[
       {
         "type":"string",
@@ -3792,7 +3673,7 @@
     ],
     "name":"mq_open"
   },
-  "278":{
+  "263":{
     "args":[
       {
         "type":"string",
@@ -3801,7 +3682,7 @@
     ],
     "name":"mq_unlink"
   },
-  "279":{
+  "264":{
     "args":[
       {
         "type":"value",
@@ -3826,7 +3707,7 @@
     ],
     "name":"mq_timedsend"
   },
-  "280":{
+  "265":{
     "args":[
       {
         "type":"value",
@@ -3851,7 +3732,7 @@
     ],
     "name":"mq_timedreceive"
   },
-  "281":{
+  "266":{
     "args":[
       {
         "type":"value",
@@ -3864,7 +3745,7 @@
     ],
     "name":"mq_notify"
   },
-  "282":{
+  "267":{
     "args":[
       {
         "type":"value",
@@ -3881,7 +3762,7 @@
     ],
     "name":"mq_getsetattr"
   },
-  "283":{
+  "268":{
     "args":[
       {
         "type":"value",
@@ -3902,32 +3783,7 @@
     ],
     "name":"kexec_load"
   },
-  "284":{
-    "args":[
-      {
-        "type":"value",
-        "name":"idtype"
-      },
-      {
-        "type":"value",
-        "name":"id"
-      },
-      {
-        "type":"pointer",
-        "name":"infop"
-      },
-      {
-        "type":"value",
-        "name":"options"
-      },
-      {
-        "type":"pointer",
-        "name":"infoc"
-      }
-    ],
-    "name":"waitid"
-  },
-  "286":{
+  "269":{
     "args":[
       {
         "type":"string",
@@ -3952,7 +3808,7 @@
     ],
     "name":"add_key"
   },
-  "287":{
+  "270":{
     "args":[
       {
         "type":"string",
@@ -3973,7 +3829,7 @@
     ],
     "name":"request_key"
   },
-  "288":{
+  "271":{
     "args":[
       {
         "type":"value",
@@ -3998,7 +3854,32 @@
     ],
     "name":"keyctl"
   },
-  "289":{
+  "272":{
+    "args":[
+      {
+        "type":"value",
+        "name":"idtype"
+      },
+      {
+        "type":"value",
+        "name":"id"
+      },
+      {
+        "type":"pointer",
+        "name":"infop"
+      },
+      {
+        "type":"value",
+        "name":"options"
+      },
+      {
+        "type":"pointer",
+        "name":"infoc"
+      }
+    ],
+    "name":"waitid"
+  },
+  "273":{
     "args":[
       {
         "type":"value",
@@ -4015,7 +3896,7 @@
     ],
     "name":"ioprio_set"
   },
-  "290":{
+  "274":{
     "args":[
       {
         "type":"value",
@@ -4028,13 +3909,13 @@
     ],
     "name":"ioprio_get"
   },
-  "291":{
+  "275":{
     "args":[
       
     ],
     "name":"inotify_init"
   },
-  "292":{
+  "276":{
     "args":[
       {
         "type":"value",
@@ -4051,7 +3932,7 @@
     ],
     "name":"inotify_add_watch"
   },
-  "293":{
+  "277":{
     "args":[
       {
         "type":"value",
@@ -4064,33 +3945,25 @@
     ],
     "name":"inotify_rm_watch"
   },
-  "294":{
+  "278":{
     "args":[
       {
         "type":"value",
-        "name":"pid"
-      },
-      {
-        "type":"value",
-        "name":"maxnode"
+        "name":"fd"
       },
       {
         "type":"pointer",
-        "name":"old_nodes"
+        "name":"npc"
       },
       {
         "type":"pointer",
-        "name":"new_nodes"
+        "name":"event"
       }
     ],
-    "name":"migrate_pages"
+    "name":"spu_run"
   },
-  "295":{
+  "279":{
     "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
       {
         "type":"string",
         "name":"pathname"
@@ -4102,247 +3975,15 @@
       {
         "type":"value",
         "name":"mode"
+      },
+      {
+        "type":"value",
+        "name":"neighbor_fd"
       }
     ],
-    "name":"openat"
+    "name":"spu_create"
   },
-  "296":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"mode"
-      }
-    ],
-    "name":"mkdirat"
-  },
-  "297":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"mode"
-      },
-      {
-        "type":"value",
-        "name":"dev"
-      }
-    ],
-    "name":"mknodat"
-  },
-  "298":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"owner"
-      },
-      {
-        "type":"value",
-        "name":"group"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"fchownat"
-  },
-  "299":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"pointer",
-        "name":"times"
-      }
-    ],
-    "name":"futimesat"
-  },
-  "300":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"pointer",
-        "name":"statbuf"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"fstatat64"
-  },
-  "301":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"unlinkat"
-  },
-  "302":{
-    "args":[
-      {
-        "type":"value",
-        "name":"olddirfd"
-      },
-      {
-        "type":"string",
-        "name":"oldpath"
-      },
-      {
-        "type":"value",
-        "name":"newdirfd"
-      },
-      {
-        "type":"string",
-        "name":"newpath"
-      }
-    ],
-    "name":"renameat"
-  },
-  "303":{
-    "args":[
-      {
-        "type":"value",
-        "name":"olddirfd"
-      },
-      {
-        "type":"string",
-        "name":"oldpath"
-      },
-      {
-        "type":"value",
-        "name":"newdirfd"
-      },
-      {
-        "type":"string",
-        "name":"newpath"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"linkat"
-  },
-  "304":{
-    "args":[
-      {
-        "type":"string",
-        "name":"oldpath"
-      },
-      {
-        "type":"value",
-        "name":"newdirfd"
-      },
-      {
-        "type":"string",
-        "name":"newpath"
-      }
-    ],
-    "name":"symlinkat"
-  },
-  "305":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"string",
-        "name":"buf"
-      },
-      {
-        "type":"value",
-        "name":"bufsiz"
-      }
-    ],
-    "name":"readlinkat"
-  },
-  "306":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"mode"
-      }
-    ],
-    "name":"fchmodat"
-  },
-  "307":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"value",
-        "name":"mode"
-      }
-    ],
-    "name":"faccessat"
-  },
-  "308":{
+  "280":{
     "args":[
       {
         "type":"value",
@@ -4371,7 +4012,7 @@
     ],
     "name":"pselect6"
   },
-  "309":{
+  "281":{
     "args":[
       {
         "type":"pointer",
@@ -4396,7 +4037,7 @@
     ],
     "name":"ppoll"
   },
-  "310":{
+  "282":{
     "args":[
       {
         "type":"value",
@@ -4405,37 +4046,7 @@
     ],
     "name":"unshare"
   },
-  "311":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"head"
-      },
-      {
-        "type":"value",
-        "name":"len"
-      }
-    ],
-    "name":"set_robust_list"
-  },
-  "312":{
-    "args":[
-      {
-        "type":"value",
-        "name":"pid"
-      },
-      {
-        "type":"pointer",
-        "name":"head_ptr"
-      },
-      {
-        "type":"pointer",
-        "name":"len_ptr"
-      }
-    ],
-    "name":"get_robust_list"
-  },
-  "313":{
+  "283":{
     "args":[
       {
         "type":"value",
@@ -4464,28 +4075,7 @@
     ],
     "name":"splice"
   },
-  "314":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"value",
-        "name":"offset"
-      },
-      {
-        "type":"value",
-        "name":"nbytes"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"sync_file_range"
-  },
-  "315":{
+  "284":{
     "args":[
       {
         "type":"value",
@@ -4506,7 +4096,7 @@
     ],
     "name":"tee"
   },
-  "316":{
+  "285":{
     "args":[
       {
         "type":"value",
@@ -4527,7 +4117,294 @@
     ],
     "name":"vmsplice"
   },
-  "317":{
+  "286":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"value",
+        "name":"mode"
+      }
+    ],
+    "name":"openat"
+  },
+  "287":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"mode"
+      }
+    ],
+    "name":"mkdirat"
+  },
+  "288":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"mode"
+      },
+      {
+        "type":"value",
+        "name":"dev"
+      }
+    ],
+    "name":"mknodat"
+  },
+  "289":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"owner"
+      },
+      {
+        "type":"value",
+        "name":"group"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"fchownat"
+  },
+  "290":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"pointer",
+        "name":"times"
+      }
+    ],
+    "name":"futimesat"
+  },
+  "291":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"pointer",
+        "name":"statbuf"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"fstatat64"
+  },
+  "292":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"unlinkat"
+  },
+  "293":{
+    "args":[
+      {
+        "type":"value",
+        "name":"olddirfd"
+      },
+      {
+        "type":"string",
+        "name":"oldpath"
+      },
+      {
+        "type":"value",
+        "name":"newdirfd"
+      },
+      {
+        "type":"string",
+        "name":"newpath"
+      }
+    ],
+    "name":"renameat"
+  },
+  "294":{
+    "args":[
+      {
+        "type":"value",
+        "name":"olddirfd"
+      },
+      {
+        "type":"string",
+        "name":"oldpath"
+      },
+      {
+        "type":"value",
+        "name":"newdirfd"
+      },
+      {
+        "type":"string",
+        "name":"newpath"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"linkat"
+  },
+  "295":{
+    "args":[
+      {
+        "type":"string",
+        "name":"oldpath"
+      },
+      {
+        "type":"value",
+        "name":"newdirfd"
+      },
+      {
+        "type":"string",
+        "name":"newpath"
+      }
+    ],
+    "name":"symlinkat"
+  },
+  "296":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"string",
+        "name":"buf"
+      },
+      {
+        "type":"value",
+        "name":"bufsiz"
+      }
+    ],
+    "name":"readlinkat"
+  },
+  "297":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"mode"
+      }
+    ],
+    "name":"fchmodat"
+  },
+  "298":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"mode"
+      }
+    ],
+    "name":"faccessat"
+  },
+  "299":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"pointer",
+        "name":"head_ptr"
+      },
+      {
+        "type":"pointer",
+        "name":"len_ptr"
+      }
+    ],
+    "name":"get_robust_list"
+  },
+  "300":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"head"
+      },
+      {
+        "type":"value",
+        "name":"len"
+      }
+    ],
+    "name":"set_robust_list"
+  },
+  "301":{
     "args":[
       {
         "type":"value",
@@ -4556,7 +4433,7 @@
     ],
     "name":"move_pages"
   },
-  "318":{
+  "302":{
     "args":[
       {
         "type":"pointer",
@@ -4573,7 +4450,7 @@
     ],
     "name":"getcpu"
   },
-  "319":{
+  "303":{
     "args":[
       {
         "type":"value",
@@ -4602,7 +4479,7 @@
     ],
     "name":"epoll_pwait"
   },
-  "320":{
+  "304":{
     "args":[
       {
         "type":"value",
@@ -4623,7 +4500,7 @@
     ],
     "name":"utimensat"
   },
-  "321":{
+  "305":{
     "args":[
       {
         "type":"value",
@@ -4640,7 +4517,7 @@
     ],
     "name":"signalfd"
   },
-  "322":{
+  "306":{
     "args":[
       {
         "type":"value",
@@ -4653,7 +4530,7 @@
     ],
     "name":"timerfd_create"
   },
-  "323":{
+  "307":{
     "args":[
       {
         "type":"value",
@@ -4662,7 +4539,28 @@
     ],
     "name":"eventfd"
   },
-  "324":{
+  "308":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"value",
+        "name":"offset"
+      },
+      {
+        "type":"value",
+        "name":"nbytes"
+      }
+    ],
+    "name":"sync_file_range2"
+  },
+  "309":{
     "args":[
       {
         "type":"value",
@@ -4683,7 +4581,24 @@
     ],
     "name":"fallocate"
   },
-  "325":{
+  "310":{
+    "args":[
+      {
+        "type":"value",
+        "name":"addr"
+      },
+      {
+        "type":"value",
+        "name":"len"
+      },
+      {
+        "type":"pointer",
+        "name":"map"
+      }
+    ],
+    "name":"subpage_prot"
+  },
+  "311":{
     "args":[
       {
         "type":"value",
@@ -4704,7 +4619,7 @@
     ],
     "name":"timerfd_settime"
   },
-  "326":{
+  "312":{
     "args":[
       {
         "type":"value",
@@ -4717,7 +4632,7 @@
     ],
     "name":"timerfd_gettime"
   },
-  "327":{
+  "313":{
     "args":[
       {
         "type":"value",
@@ -4738,7 +4653,7 @@
     ],
     "name":"signalfd4"
   },
-  "328":{
+  "314":{
     "args":[
       {
         "type":"value",
@@ -4751,7 +4666,7 @@
     ],
     "name":"eventfd2"
   },
-  "329":{
+  "315":{
     "args":[
       {
         "type":"value",
@@ -4760,7 +4675,7 @@
     ],
     "name":"epoll_create1"
   },
-  "330":{
+  "316":{
     "args":[
       {
         "type":"value",
@@ -4777,7 +4692,7 @@
     ],
     "name":"dup3"
   },
-  "331":{
+  "317":{
     "args":[
       {
         "type":"pointer",
@@ -4790,7 +4705,7 @@
     ],
     "name":"pipe2"
   },
-  "332":{
+  "318":{
     "args":[
       {
         "type":"value",
@@ -4799,70 +4714,7 @@
     ],
     "name":"inotify_init1"
   },
-  "333":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"pointer",
-        "name":"iov"
-      },
-      {
-        "type":"value",
-        "name":"iovcnt"
-      },
-      {
-        "type":"value",
-        "name":"offset"
-      }
-    ],
-    "name":"preadv"
-  },
-  "334":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"pointer",
-        "name":"iov"
-      },
-      {
-        "type":"value",
-        "name":"iovcnt"
-      },
-      {
-        "type":"value",
-        "name":"offset"
-      }
-    ],
-    "name":"pwritev"
-  },
-  "335":{
-    "args":[
-      {
-        "type":"value",
-        "name":"tgid"
-      },
-      {
-        "type":"value",
-        "name":"tid"
-      },
-      {
-        "type":"value",
-        "name":"sig"
-      },
-      {
-        "type":"pointer",
-        "name":"info"
-      }
-    ],
-    "name":"rt_tgsigqueueinfo"
-  },
-  "336":{
+  "319":{
     "args":[
       {
         "type":"pointer",
@@ -4887,32 +4739,70 @@
     ],
     "name":"perf_event_open"
   },
-  "337":{
+  "320":{
     "args":[
       {
         "type":"value",
-        "name":"sockfd"
+        "name":"fd"
       },
       {
         "type":"pointer",
-        "name":"msgvec"
+        "name":"iov"
       },
       {
         "type":"value",
-        "name":"vlen"
+        "name":"iovcnt"
       },
       {
         "type":"value",
-        "name":"flags"
-      },
-      {
-        "type":"pointer",
-        "name":"timeout"
+        "name":"offset"
       }
     ],
-    "name":"recvmmsg"
+    "name":"preadv"
   },
-  "338":{
+  "321":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"pointer",
+        "name":"iov"
+      },
+      {
+        "type":"value",
+        "name":"iovcnt"
+      },
+      {
+        "type":"value",
+        "name":"offset"
+      }
+    ],
+    "name":"pwritev"
+  },
+  "322":{
+    "args":[
+      {
+        "type":"value",
+        "name":"tgid"
+      },
+      {
+        "type":"value",
+        "name":"tid"
+      },
+      {
+        "type":"value",
+        "name":"sig"
+      },
+      {
+        "type":"pointer",
+        "name":"info"
+      }
+    ],
+    "name":"rt_tgsigqueueinfo"
+  },
+  "323":{
     "args":[
       {
         "type":"value",
@@ -4925,7 +4815,7 @@
     ],
     "name":"fanotify_init"
   },
-  "339":{
+  "324":{
     "args":[
       {
         "type":"value",
@@ -4950,7 +4840,7 @@
     ],
     "name":"fanotify_mark"
   },
-  "340":{
+  "325":{
     "args":[
       {
         "type":"value",
@@ -4971,357 +4861,7 @@
     ],
     "name":"prlimit64"
   },
-  "341":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"pointer",
-        "name":"handle"
-      },
-      {
-        "type":"pointer",
-        "name":"mount_id"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"name_to_handle_at"
-  },
-  "342":{
-    "args":[
-      {
-        "type":"value",
-        "name":"mount_fd"
-      },
-      {
-        "type":"pointer",
-        "name":"handle"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"open_by_handle_at"
-  },
-  "343":{
-    "args":[
-      {
-        "type":"value",
-        "name":"clk_id"
-      },
-      {
-        "type":"pointer",
-        "name":"buf"
-      }
-    ],
-    "name":"clock_adjtime"
-  },
-  "344":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      }
-    ],
-    "name":"syncfs"
-  },
-  "345":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"pointer",
-        "name":"msgvec"
-      },
-      {
-        "type":"value",
-        "name":"vlen"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"sendmmsg"
-  },
-  "346":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"value",
-        "name":"nstype"
-      }
-    ],
-    "name":"setns"
-  },
-  "347":{
-    "args":[
-      {
-        "type":"value",
-        "name":"pid"
-      },
-      {
-        "type":"pointer",
-        "name":"local_iov"
-      },
-      {
-        "type":"value",
-        "name":"liovcnt"
-      },
-      {
-        "type":"pointer",
-        "name":"remote_iov"
-      },
-      {
-        "type":"value",
-        "name":"riovcnt"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"process_vm_readv"
-  },
-  "348":{
-    "args":[
-      {
-        "type":"value",
-        "name":"pid"
-      },
-      {
-        "type":"pointer",
-        "name":"local_iov"
-      },
-      {
-        "type":"value",
-        "name":"liovcnt"
-      },
-      {
-        "type":"pointer",
-        "name":"remote_iov"
-      },
-      {
-        "type":"value",
-        "name":"riovcnt"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"process_vm_writev"
-  },
-  "349":{
-    "args":[
-      {
-        "type":"value",
-        "name":"pid1"
-      },
-      {
-        "type":"value",
-        "name":"pid2"
-      },
-      {
-        "type":"value",
-        "name":"type"
-      },
-      {
-        "type":"value",
-        "name":"idx1"
-      },
-      {
-        "type":"value",
-        "name":"idx2"
-      }
-    ],
-    "name":"kcmp"
-  },
-  "350":{
-    "args":[
-      {
-        "type":"value",
-        "name":"fd"
-      },
-      {
-        "type":"string",
-        "name":"param_values"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"finit_module"
-  },
-  "351":{
-    "args":[
-      {
-        "type":"value",
-        "name":"pid"
-      },
-      {
-        "type":"pointer",
-        "name":"attr"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"sched_setattr"
-  },
-  "352":{
-    "args":[
-      {
-        "type":"value",
-        "name":"pid"
-      },
-      {
-        "type":"pointer",
-        "name":"attr"
-      },
-      {
-        "type":"value",
-        "name":"size"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"sched_getattr"
-  },
-  "353":{
-    "args":[
-      {
-        "type":"value",
-        "name":"olddirfd"
-      },
-      {
-        "type":"string",
-        "name":"oldpath"
-      },
-      {
-        "type":"value",
-        "name":"newdirfd"
-      },
-      {
-        "type":"string",
-        "name":"newpath"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"renameat2"
-  },
-  "354":{
-    "args":[
-      {
-        "type":"value",
-        "name":"operation"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      },
-      {
-        "type":"pointer",
-        "name":"args"
-      }
-    ],
-    "name":"seccomp"
-  },
-  "355":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"buf"
-      },
-      {
-        "type":"value",
-        "name":"buflen"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"getrandom"
-  },
-  "356":{
-    "args":[
-      {
-        "type":"string",
-        "name":"name"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"memfd_create"
-  },
-  "357":{
-    "args":[
-      {
-        "type":"value",
-        "name":"cmd"
-      },
-      {
-        "type":"pointer",
-        "name":"attr"
-      },
-      {
-        "type":"value",
-        "name":"size"
-      }
-    ],
-    "name":"bpf"
-  },
-  "358":{
-    "args":[
-      {
-        "type":"value",
-        "name":"dirfd"
-      },
-      {
-        "type":"string",
-        "name":"pathname"
-      },
-      {
-        "type":"pointer",
-        "name":"argv"
-      },
-      {
-        "type":"pointer",
-        "name":"envp"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      }
-    ],
-    "name":"execveat"
-  },
-  "359":{
+  "326":{
     "args":[
       {
         "type":"value",
@@ -5338,7 +4878,105 @@
     ],
     "name":"socket"
   },
-  "360":{
+  "327":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"value",
+        "name":"addrlen"
+      }
+    ],
+    "name":"bind"
+  },
+  "328":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"value",
+        "name":"addrlen"
+      }
+    ],
+    "name":"connect"
+  },
+  "329":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"value",
+        "name":"backlog"
+      }
+    ],
+    "name":"listen"
+  },
+  "330":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"pointer",
+        "name":"addrlen"
+      }
+    ],
+    "name":"accept"
+  },
+  "331":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"pointer",
+        "name":"addrlen"
+      }
+    ],
+    "name":"getsockname"
+  },
+  "332":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"pointer",
+        "name":"addrlen"
+      }
+    ],
+    "name":"getpeername"
+  },
+  "333":{
     "args":[
       {
         "type":"value",
@@ -5359,7 +4997,7 @@
     ],
     "name":"socketpair"
   },
-  "361":{
+  "334":{
     "args":[
       {
         "type":"value",
@@ -5367,151 +5005,20 @@
       },
       {
         "type":"pointer",
-        "name":"addr"
+        "name":"buf"
       },
       {
         "type":"value",
-        "name":"addrlen"
-      }
-    ],
-    "name":"bind"
-  },
-  "362":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"value",
-        "name":"addrlen"
-      }
-    ],
-    "name":"connect"
-  },
-  "363":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"value",
-        "name":"backlog"
-      }
-    ],
-    "name":"listen"
-  },
-  "364":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"pointer",
-        "name":"addrlen"
+        "name":"len"
       },
       {
         "type":"value",
         "name":"flags"
       }
     ],
-    "name":"accept4"
+    "name":"send"
   },
-  "365":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"value",
-        "name":"level"
-      },
-      {
-        "type":"value",
-        "name":"optname"
-      },
-      {
-        "type":"pointer",
-        "name":"optval"
-      },
-      {
-        "type":"pointer",
-        "name":"optlen"
-      }
-    ],
-    "name":"getsockopt"
-  },
-  "366":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"value",
-        "name":"level"
-      },
-      {
-        "type":"value",
-        "name":"optname"
-      },
-      {
-        "type":"pointer",
-        "name":"optval"
-      },
-      {
-        "type":"value",
-        "name":"optlen"
-      }
-    ],
-    "name":"setsockopt"
-  },
-  "367":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"pointer",
-        "name":"addrlen"
-      }
-    ],
-    "name":"getsockname"
-  },
-  "368":{
-    "args":[
-      {
-        "type":"value",
-        "name":"sockfd"
-      },
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"pointer",
-        "name":"addrlen"
-      }
-    ],
-    "name":"getpeername"
-  },
-  "369":{
+  "335":{
     "args":[
       {
         "type":"value",
@@ -5540,7 +5047,7 @@
     ],
     "name":"sendto"
   },
-  "370":{
+  "336":{
     "args":[
       {
         "type":"value",
@@ -5548,16 +5055,20 @@
       },
       {
         "type":"pointer",
-        "name":"msg"
+        "name":"buf"
+      },
+      {
+        "type":"value",
+        "name":"len"
       },
       {
         "type":"value",
         "name":"flags"
       }
     ],
-    "name":"sendmsg"
+    "name":"recv"
   },
-  "371":{
+  "337":{
     "args":[
       {
         "type":"value",
@@ -5586,7 +5097,87 @@
     ],
     "name":"recvfrom"
   },
-  "372":{
+  "338":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"value",
+        "name":"how"
+      }
+    ],
+    "name":"shutdown"
+  },
+  "339":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"value",
+        "name":"level"
+      },
+      {
+        "type":"value",
+        "name":"optname"
+      },
+      {
+        "type":"pointer",
+        "name":"optval"
+      },
+      {
+        "type":"value",
+        "name":"optlen"
+      }
+    ],
+    "name":"setsockopt"
+  },
+  "340":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"value",
+        "name":"level"
+      },
+      {
+        "type":"value",
+        "name":"optname"
+      },
+      {
+        "type":"pointer",
+        "name":"optval"
+      },
+      {
+        "type":"pointer",
+        "name":"optlen"
+      }
+    ],
+    "name":"getsockopt"
+  },
+  "341":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"msg"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"sendmsg"
+  },
+  "342":{
     "args":[
       {
         "type":"value",
@@ -5603,20 +5194,409 @@
     ],
     "name":"recvmsg"
   },
-  "373":{
+  "343":{
     "args":[
       {
         "type":"value",
         "name":"sockfd"
       },
       {
+        "type":"pointer",
+        "name":"msgvec"
+      },
+      {
         "type":"value",
-        "name":"how"
+        "name":"vlen"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
       }
     ],
-    "name":"shutdown"
+    "name":"recvmmsg"
   },
-  "374":{
+  "344":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"pointer",
+        "name":"addrlen"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"accept4"
+  },
+  "345":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"pointer",
+        "name":"handle"
+      },
+      {
+        "type":"pointer",
+        "name":"mount_id"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"name_to_handle_at"
+  },
+  "346":{
+    "args":[
+      {
+        "type":"value",
+        "name":"mount_fd"
+      },
+      {
+        "type":"pointer",
+        "name":"handle"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"open_by_handle_at"
+  },
+  "347":{
+    "args":[
+      {
+        "type":"value",
+        "name":"clk_id"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
+    ],
+    "name":"clock_adjtime"
+  },
+  "348":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      }
+    ],
+    "name":"syncfs"
+  },
+  "349":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"msgvec"
+      },
+      {
+        "type":"value",
+        "name":"vlen"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"sendmmsg"
+  },
+  "350":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"nstype"
+      }
+    ],
+    "name":"setns"
+  },
+  "351":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"pointer",
+        "name":"local_iov"
+      },
+      {
+        "type":"value",
+        "name":"liovcnt"
+      },
+      {
+        "type":"pointer",
+        "name":"remote_iov"
+      },
+      {
+        "type":"value",
+        "name":"riovcnt"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"process_vm_readv"
+  },
+  "352":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"pointer",
+        "name":"local_iov"
+      },
+      {
+        "type":"value",
+        "name":"liovcnt"
+      },
+      {
+        "type":"pointer",
+        "name":"remote_iov"
+      },
+      {
+        "type":"value",
+        "name":"riovcnt"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"process_vm_writev"
+  },
+  "353":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"string",
+        "name":"param_values"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"finit_module"
+  },
+  "354":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid1"
+      },
+      {
+        "type":"value",
+        "name":"pid2"
+      },
+      {
+        "type":"value",
+        "name":"type"
+      },
+      {
+        "type":"value",
+        "name":"idx1"
+      },
+      {
+        "type":"value",
+        "name":"idx2"
+      }
+    ],
+    "name":"kcmp"
+  },
+  "355":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"pointer",
+        "name":"attr"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"sched_setattr"
+  },
+  "356":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"pointer",
+        "name":"attr"
+      },
+      {
+        "type":"value",
+        "name":"size"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"sched_getattr"
+  },
+  "357":{
+    "args":[
+      {
+        "type":"value",
+        "name":"olddirfd"
+      },
+      {
+        "type":"string",
+        "name":"oldpath"
+      },
+      {
+        "type":"value",
+        "name":"newdirfd"
+      },
+      {
+        "type":"string",
+        "name":"newpath"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"renameat2"
+  },
+  "358":{
+    "args":[
+      {
+        "type":"value",
+        "name":"operation"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"args"
+      }
+    ],
+    "name":"seccomp"
+  },
+  "359":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"buf"
+      },
+      {
+        "type":"value",
+        "name":"buflen"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"getrandom"
+  },
+  "360":{
+    "args":[
+      {
+        "type":"string",
+        "name":"name"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"memfd_create"
+  },
+  "361":{
+    "args":[
+      {
+        "type":"value",
+        "name":"cmd"
+      },
+      {
+        "type":"pointer",
+        "name":"attr"
+      },
+      {
+        "type":"value",
+        "name":"size"
+      }
+    ],
+    "name":"bpf"
+  },
+  "362":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"pointer",
+        "name":"argv"
+      },
+      {
+        "type":"pointer",
+        "name":"envp"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"execveat"
+  },
+  "363":{
+    "args":[
+      
+    ],
+    "name":"switch_endian"
+  },
+  "364":{
     "args":[
       {
         "type":"value",
@@ -5625,7 +5605,7 @@
     ],
     "name":"userfaultfd"
   },
-  "375":{
+  "365":{
     "args":[
       {
         "type":"value",
@@ -5638,7 +5618,7 @@
     ],
     "name":"membarrier"
   },
-  "376":{
+  "378":{
     "args":[
       {
         "type":"pointer",
@@ -5655,7 +5635,7 @@
     ],
     "name":"mlock2"
   },
-  "377":{
+  "379":{
     "args":[
       {
         "type":"value",
@@ -5684,7 +5664,7 @@
     ],
     "name":"copy_file_range"
   },
-  "378":{
+  "380":{
     "args":[
       {
         "type":"value",
@@ -5713,7 +5693,7 @@
     ],
     "name":"preadv2"
   },
-  "379":{
+  "381":{
     "args":[
       {
         "type":"value",
@@ -5742,48 +5722,30 @@
     ],
     "name":"pwritev2"
   },
-  "380":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"addr"
-      },
-      {
-        "type":"value",
-        "name":"len"
-      },
-      {
-        "type":"value",
-        "name":"prot"
-      },
-      {
-        "type":"value",
-        "name":"pkey"
-      }
-    ],
-    "name":"pkey_mprotect"
-  },
-  "381":{
-    "args":[
-      {
-        "type":"value",
-        "name":"flags"
-      },
-      {
-        "type":"value",
-        "name":"access_rights"
-      }
-    ],
-    "name":"pkey_alloc"
-  },
   "382":{
     "args":[
       {
         "type":"value",
-        "name":"pkey"
+        "name":"kernel_fd"
+      },
+      {
+        "type":"value",
+        "name":"initrd_fd"
+      },
+      {
+        "type":"value",
+        "name":"cmdline_len"
+      },
+      {
+        "type":"string",
+        "name":"cmdline"
+      },
+      {
+        "type":"value",
+        "name":"flags"
       }
     ],
-    "name":"pkey_free"
+    "name":"kexec_file_load"
   },
   "383":{
     "args":[
@@ -5814,16 +5776,67 @@
     "args":[
       {
         "type":"value",
-        "name":"code"
+        "name":"flags"
       },
       {
         "type":"value",
-        "name":"addr"
+        "name":"access_rights"
       }
     ],
-    "name":"arch_prctl"
+    "name":"pkey_alloc"
   },
   "385":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pkey"
+      }
+    ],
+    "name":"pkey_free"
+  },
+  "386":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"addr"
+      },
+      {
+        "type":"value",
+        "name":"len"
+      },
+      {
+        "type":"value",
+        "name":"prot"
+      },
+      {
+        "type":"value",
+        "name":"pkey"
+      }
+    ],
+    "name":"pkey_mprotect"
+  },
+  "387":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"rseq"
+      },
+      {
+        "type":"value",
+        "name":"rseq_len"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"value",
+        "name":"sig"
+      }
+    ],
+    "name":"rseq"
+  },
+  "388":{
     "args":[
       {
         "type":"value",
@@ -5847,27 +5860,6 @@
       }
     ],
     "name":"io_pgetevents"
-  },
-  "386":{
-    "args":[
-      {
-        "type":"pointer",
-        "name":"rseq"
-      },
-      {
-        "type":"value",
-        "name":"rseq_len"
-      },
-      {
-        "type":"value",
-        "name":"flags"
-      },
-      {
-        "type":"value",
-        "name":"sig"
-      }
-    ],
-    "name":"rseq"
   },
   "393":{
     "args":[
@@ -6042,5 +6034,896 @@
       }
     ],
     "name":"msgctl"
+  },
+  "403":{
+    "args":[
+      {
+        "type":"value",
+        "name":"clockid"
+      },
+      {
+        "type":"pointer",
+        "name":"tp"
+      }
+    ],
+    "name":"clock_gettime64"
+  },
+  "404":{
+    "args":[
+      {
+        "type":"value",
+        "name":"clockid"
+      },
+      {
+        "type":"pointer",
+        "name":"tp"
+      }
+    ],
+    "name":"clock_settime64"
+  },
+  "405":{
+    "args":[
+      {
+        "type":"value",
+        "name":"clockid"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
+    ],
+    "name":"clock_adjtime64"
+  },
+  "406":{
+    "args":[
+      {
+        "type":"value",
+        "name":"clockid"
+      },
+      {
+        "type":"pointer",
+        "name":"res"
+      }
+    ],
+    "name":"clock_getres_time64"
+  },
+  "407":{
+    "args":[
+      {
+        "type":"value",
+        "name":"clockid"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"request"
+      },
+      {
+        "type":"pointer",
+        "name":"remain"
+      }
+    ],
+    "name":"clock_nanosleep_time64"
+  },
+  "408":{
+    "args":[
+      {
+        "type":"value",
+        "name":"timerid"
+      },
+      {
+        "type":"pointer",
+        "name":"curr_value"
+      }
+    ],
+    "name":"timer_gettime64"
+  },
+  "409":{
+    "args":[
+      {
+        "type":"value",
+        "name":"timerid"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"new_value"
+      },
+      {
+        "type":"pointer",
+        "name":"old_value"
+      }
+    ],
+    "name":"timer_settime64"
+  },
+  "410":{
+    "args":[
+      {
+        "type":"value",
+        "name":"timerid"
+      },
+      {
+        "type":"pointer",
+        "name":"curr_value"
+      }
+    ],
+    "name":"timerfd_gettime64"
+  },
+  "411":{
+    "args":[
+      {
+        "type":"value",
+        "name":"timerid"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"new_value"
+      },
+      {
+        "type":"pointer",
+        "name":"old_value"
+      }
+    ],
+    "name":"timerfd_settime64"
+  },
+  "412":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"pointer",
+        "name":"times"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"utimensat_time64"
+  },
+  "413":{
+    "args":[
+      {
+        "type":"value",
+        "name":"nfds"
+      },
+      {
+        "type":"pointer",
+        "name":"readfds"
+      },
+      {
+        "type":"pointer",
+        "name":"writefds"
+      },
+      {
+        "type":"pointer",
+        "name":"exceptfds"
+      },
+      {
+        "type":"pointer",
+        "name":"tsp"
+      },
+      {
+        "type":"pointer",
+        "name":"sig"
+      }
+    ],
+    "name":"pselect6_time64"
+  },
+  "414":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"fds"
+      },
+      {
+        "type":"value",
+        "name":"nfds"
+      },
+      {
+        "type":"pointer",
+        "name":"tmo_p"
+      },
+      {
+        "type":"pointer",
+        "name":"sigmask"
+      },
+      {
+        "type":"value",
+        "name":"sigsetsize"
+      }
+    ],
+    "name":"ppoll_time64"
+  },
+  "416":{
+    "args":[
+      {
+        "type":"value",
+        "name":"ctx_id"
+      },
+      {
+        "type":"value",
+        "name":"min_nr"
+      },
+      {
+        "type":"value",
+        "name":"nr"
+      },
+      {
+        "type":"pointer",
+        "name":"events"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
+      }
+    ],
+    "name":"io_pgetevents_time64"
+  },
+  "417":{
+    "args":[
+      {
+        "type":"value",
+        "name":"sockfd"
+      },
+      {
+        "type":"pointer",
+        "name":"msgvec"
+      },
+      {
+        "type":"value",
+        "name":"vlen"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
+      }
+    ],
+    "name":"recvmmsg_time64"
+  },
+  "418":{
+    "args":[
+      {
+        "type":"value",
+        "name":"mqdes"
+      },
+      {
+        "type":"string",
+        "name":"msg_ptr"
+      },
+      {
+        "type":"value",
+        "name":"msg_len"
+      },
+      {
+        "type":"value",
+        "name":"msg_prio"
+      },
+      {
+        "type":"pointer",
+        "name":"abs_timeout"
+      }
+    ],
+    "name":"mq_timedsend_time64"
+  },
+  "419":{
+    "args":[
+      {
+        "type":"value",
+        "name":"mqdes"
+      },
+      {
+        "type":"string",
+        "name":"msg_ptr"
+      },
+      {
+        "type":"value",
+        "name":"msg_len"
+      },
+      {
+        "type":"pointer",
+        "name":"msg_prio"
+      },
+      {
+        "type":"pointer",
+        "name":"abs_timeout"
+      }
+    ],
+    "name":"mq_timedreceive_time64"
+  },
+  "420":{
+    "args":[
+      {
+        "type":"value",
+        "name":"semid"
+      },
+      {
+        "type":"pointer",
+        "name":"sops"
+      },
+      {
+        "type":"value",
+        "name":"nsops"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
+      }
+    ],
+    "name":"semtimedop_time64"
+  },
+  "421":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"set"
+      },
+      {
+        "type":"pointer",
+        "name":"info"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
+      },
+      {
+        "type":"value",
+        "name":"sigsetsize"
+      }
+    ],
+    "name":"rt_sigtimedwait_time64"
+  },
+  "422":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"uaddr"
+      },
+      {
+        "type":"value",
+        "name":"futex_op"
+      },
+      {
+        "type":"value",
+        "name":"val"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
+      },
+      {
+        "type":"pointer",
+        "name":"uaddr2"
+      },
+      {
+        "type":"value",
+        "name":"val3"
+      }
+    ],
+    "name":"futex_time64"
+  },
+  "423":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"pointer",
+        "name":"interval"
+      }
+    ],
+    "name":"sched_rr_get_interval_time64"
+  },
+  "424":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pidfd"
+      },
+      {
+        "type":"value",
+        "name":"sig"
+      },
+      {
+        "type":"pointer",
+        "name":"info"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"pidfd_send_signal"
+  },
+  "425":{
+    "args":[
+      {
+        "type":"value",
+        "name":"entries"
+      },
+      {
+        "type":"pointer",
+        "name":"p"
+      }
+    ],
+    "name":"io_uring_setup"
+  },
+  "426":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"to_submit"
+      },
+      {
+        "type":"value",
+        "name":"min_complete"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"pointer",
+        "name":"sig"
+      }
+    ],
+    "name":"io_uring_enter"
+  },
+  "427":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"opcode"
+      },
+      {
+        "type":"pointer",
+        "name":"arg"
+      },
+      {
+        "type":"value",
+        "name":"nr_args"
+      }
+    ],
+    "name":"io_uring_register"
+  },
+  "428":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"open_tree"
+  },
+  "429":{
+    "args":[
+      {
+        "type":"value",
+        "name":"from_dirfd"
+      },
+      {
+        "type":"string",
+        "name":"from_pathname"
+      },
+      {
+        "type":"value",
+        "name":"to_dirfd"
+      },
+      {
+        "type":"string",
+        "name":"to_pathname"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"move_mount"
+  },
+  "430":{
+    "args":[
+      {
+        "type":"string",
+        "name":"fsname"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"fsopen"
+  },
+  "431":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"cmd"
+      },
+      {
+        "type":"string",
+        "name":"key"
+      },
+      {
+        "type":"pointer",
+        "name":"value"
+      },
+      {
+        "type":"value",
+        "name":"aux"
+      }
+    ],
+    "name":"fsconfig"
+  },
+  "432":{
+    "args":[
+      {
+        "type":"value",
+        "name":"fd"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      },
+      {
+        "type":"value",
+        "name":"ms_flags"
+      }
+    ],
+    "name":"fsmount"
+  },
+  "433":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"fspick"
+  },
+  "434":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pid"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"pidfd_open"
+  },
+  "435":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"cl_args"
+      },
+      {
+        "type":"value",
+        "name":"size"
+      }
+    ],
+    "name":"clone3"
+  },
+  "437":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"pointer",
+        "name":"how"
+      },
+      {
+        "type":"value",
+        "name":"size"
+      }
+    ],
+    "name":"openat2"
+  },
+  "438":{
+    "args":[
+      {
+        "type":"value",
+        "name":"pidfd"
+      },
+      {
+        "type":"value",
+        "name":"targetfd"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"pidfd_getfd"
+  },
+  "439":{
+    "args":[
+      {
+        "type":"value",
+        "name":"dirfd"
+      },
+      {
+        "type":"string",
+        "name":"pathname"
+      },
+      {
+        "type":"value",
+        "name":"mode"
+      },
+      {
+        "type":"value",
+        "name":"flags"
+      }
+    ],
+    "name":"faccessat2"
+  },
+  "522":{
+    "args":[
+      {
+        "type":"value",
+        "name":"semid"
+      },
+      {
+        "type":"pointer",
+        "name":"sops"
+      },
+      {
+        "type":"value",
+        "name":"nsops"
+      }
+    ],
+    "name":"semop"
+  },
+  "523":{
+    "args":[
+      {
+        "type":"value",
+        "name":"key"
+      },
+      {
+        "type":"value",
+        "name":"nsems"
+      },
+      {
+        "type":"value",
+        "name":"semflg"
+      }
+    ],
+    "name":"semget"
+  },
+  "524":{
+    "args":[
+      {
+        "type":"value",
+        "name":"semid"
+      },
+      {
+        "type":"value",
+        "name":"semnum"
+      },
+      {
+        "type":"value",
+        "name":"cmd"
+      },
+      {
+        "type":"value",
+        "name":"arg"
+      }
+    ],
+    "name":"semctl"
+  },
+  "525":{
+    "args":[
+      {
+        "type":"value",
+        "name":"semid"
+      },
+      {
+        "type":"pointer",
+        "name":"sops"
+      },
+      {
+        "type":"value",
+        "name":"nsops"
+      },
+      {
+        "type":"pointer",
+        "name":"timeout"
+      }
+    ],
+    "name":"semtimedop"
+  },
+  "532":{
+    "args":[
+      {
+        "type":"value",
+        "name":"msqid"
+      },
+      {
+        "type":"pointer",
+        "name":"msgp"
+      },
+      {
+        "type":"value",
+        "name":"msgsz"
+      },
+      {
+        "type":"value",
+        "name":"msgflg"
+      }
+    ],
+    "name":"msgsnd"
+  },
+  "533":{
+    "args":[
+      {
+        "type":"value",
+        "name":"msqid"
+      },
+      {
+        "type":"pointer",
+        "name":"msgp"
+      },
+      {
+        "type":"value",
+        "name":"msgsz"
+      },
+      {
+        "type":"value",
+        "name":"msgtyp"
+      },
+      {
+        "type":"value",
+        "name":"msgflg"
+      }
+    ],
+    "name":"msgrcv"
+  },
+  "534":{
+    "args":[
+      {
+        "type":"value",
+        "name":"key"
+      },
+      {
+        "type":"value",
+        "name":"msgflg"
+      }
+    ],
+    "name":"msgget"
+  },
+  "535":{
+    "args":[
+      {
+        "type":"value",
+        "name":"msqid"
+      },
+      {
+        "type":"value",
+        "name":"cmd"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
+    ],
+    "name":"msgctl"
+  },
+  "542":{
+    "args":[
+      {
+        "type":"value",
+        "name":"shmid"
+      },
+      {
+        "type":"pointer",
+        "name":"shmaddr"
+      },
+      {
+        "type":"value",
+        "name":"shmflg"
+      }
+    ],
+    "name":"shmat"
+  },
+  "543":{
+    "args":[
+      {
+        "type":"pointer",
+        "name":"shmaddr"
+      }
+    ],
+    "name":"shmdt"
+  },
+  "544":{
+    "args":[
+      {
+        "type":"value",
+        "name":"key"
+      },
+      {
+        "type":"value",
+        "name":"size"
+      },
+      {
+        "type":"value",
+        "name":"shmflg"
+      }
+    ],
+    "name":"shmget"
+  },
+  "545":{
+    "args":[
+      {
+        "type":"value",
+        "name":"shmid"
+      },
+      {
+        "type":"value",
+        "name":"cmd"
+      },
+      {
+        "type":"pointer",
+        "name":"buf"
+      }
+    ],
+    "name":"shmctl"
   }
 }
