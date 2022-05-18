@@ -150,6 +150,9 @@ class SyscallerTask(bn.BackgroundTaskThread):
                     if instruction.operation == bn.LowLevelILOperation.LLIL_SYSCALL:
                         self.annotate_llil(function, block, instruction)
                     elif instruction.operation == bn.LowLevelILOperation.LLIL_CALL:
-                        target = self.bv.get_function_at(instruction.dest)
+                        dest = instruction.dest
+                        if not isinstance(dest, bn.lowlevelil.LowLevelILConstPtr):
+                            continue
+                        target = self.bv.get_function_at(dest)
                         if target and target.name == "syscall":
                             self.annotate_syscall(function, block, instruction, target)
